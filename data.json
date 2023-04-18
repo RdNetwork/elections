@@ -59,7 +59,7 @@
                 "abs_100": 15.25,
                 "abs": 4407665
             }
-            },
+        },
         {
             "date": "1965-12-19",
             "label": "Présidentiellles 1965 - 2e tour",
@@ -155,7 +155,7 @@
                 "abs_100": 19.1,
                 "abs": 5404687
             }
-            },
+        },
         {
             "date": "1967-03-12",
             "label": "Législatives 1967 - 2e tour",
@@ -220,6 +220,173 @@
             "abs": {
                 "abs_100": 20,
                 "abs": 5650000
+            }
+        },
+        {
+            "date": "1968-06-23",
+            "label": "Législatives 1968 - 1er tour",
+            "step": 1,
+            "type:": "legis",
+            "results": [
+                {
+                    "name": "Parti communiste",
+                    "res_100": 20.03,
+                    "res": 4435357,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 1
+                },
+                {
+                    "name": "Fédération de la gauche démocrate et socialiste",
+                    "res_100": 16.5,
+                    "res": 3654003,
+                    "party": "FGDS (SFIO+CIR+PR)",
+                    "pool": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Parti socialiste unifié",
+                    "res_100": 3.94,
+                    "res": 874212,
+                    "party": "PSU",
+                    "pool": "Gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 0.74,
+                    "res": 163679,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Républicains indépendants / Divers droite",
+                    "res_100": 4.14,
+                    "res": 917539,
+                    "party": "FNRI (+DVD)",
+                    "pool": "Centre-droit",
+                    "level": 8
+                },
+                {
+                    "name": "Union des démocrates pour la République",
+                    "res_100": 43.65,
+                    "res": 9663605,
+                    "party": "UDR",
+                    "pool": "Droite",
+                    "level": 9
+                },
+                {
+                    "name": "Progrès et démocratie moderne",
+                    "res_100": 10.34,
+                    "res": 2290165,
+                    "party": "PDM (CD+CNIP+CR)",
+                    "pool": "Centre",
+                    "level": 7
+                },
+                {
+                    "name": "Technique et démocratie",
+                    "res_100": 0.34,
+                    "res": 77378,
+                    "party": "Divers",
+                    "pool": "Divers",
+                    "level": 5
+                },
+                {
+                    "name": "Mouvement pour la réforme",
+                    "res_100": 0.15,
+                    "res": 33848,
+                    "party": "Divers",
+                    "pool": "Divers",
+                    "level": 6
+                },
+                {
+                    "name": "Alliance républicaine",
+                    "res_100": 0.13,
+                    "res": 28871,
+                    "party": "ARLP",
+                    "pool": "Extrême droite",
+                    "level": 10
+                }
+            ],
+            "abs": {
+                "abs_100": 19.99,
+                "abs": 5631892
+            }
+        },
+        {
+            "date": "1968-06-30",
+            "label": "Législatives 1968 - 2e tour",
+            "step": 2,
+            "type:": "legis",
+            "results": [
+                {
+                    "name": "Parti communiste",
+                    "res_100": 20.14,
+                    "res": 2935775,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 1,
+                    "seats": 34
+                },
+                {
+                    "name": "Fédération de la gauche démocrate et socialiste",
+                    "res_100": 16.5,
+                    "res": 3097338,
+                    "party": "FGDS (SFIO+CIR+PR)",
+                    "pool": "Gauche",
+                    "level": 3,
+                    "seats": 57
+                },
+                {
+                    "name": "Parti socialiste unifié",
+                    "res_100": 0.57,
+                    "res": 83777,
+                    "party": "PSU",
+                    "pool": "Gauche",
+                    "level": 2,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 0.42,
+                    "res": 60584,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 0
+                },
+                {
+                    "name": "Républicains indépendants / Divers droite",
+                    "res_100": 3.41,
+                    "res": 496463,
+                    "party": "FNRI (+DVD)",
+                    "pool": "Centre-droit",
+                    "level": 8,
+                    "seats": 73
+                },
+                {
+                    "name": "Union des démocrates pour la République",
+                    "res_100": 46.39,
+                    "res": 6762170,
+                    "party": "UDR",
+                    "pool": "Droite",
+                    "level": 9,
+                    "seats": 294
+                },
+                {
+                    "name": "Progrès et démocratie moderne",
+                    "res_100": 7.83,
+                    "res": 1141305,
+                    "party": "PDM (CD+CNIP+CR)",
+                    "pool": "Centre",
+                    "level": 7,
+                    "seats": 27
+                }
+            ],
+            "abs": {
+                "abs_100": 22.18,
+                "abs": 4272800
             }
         }
     ]
