@@ -388,6 +388,448 @@
                 "abs_100": 22.18,
                 "abs": 4272800
             }
+        },
+        {
+            "date": "1969-06-01",
+            "label": "Présidentiellles 1969 - 1er tour",
+            "type:": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "Georges Pompidou",
+                    "res_100": 44.47,
+                    "res": 10051783,
+                    "party": "UDR (+CDP+RI)",
+                    "pool": "Droite",
+                    "level": 7
+                },
+                {
+                    "name": "Alain Poher",
+                    "res_100": 23.31,
+                    "res": 5268613,
+                    "party": "CD (+CR+CNIP+PDM)",
+                    "pool": "Centre",
+                    "level": 6
+                },
+                {
+                    "name": "Jacques Duclos",
+                    "res_100": 21.27,
+                    "res": 4808285,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2
+                },
+                {
+                    "name": "Gaston Defferre",
+                    "res_100": 5.01,
+                    "res": 1133222,
+                    "party": "SFIO",
+                    "pool": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Michel Rocard",
+                    "res_100": 3.61,
+                    "res": 816470,
+                    "party": "PSU",
+                    "pool": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Louis Ducatel",
+                    "res_100": 1.27,
+                    "res": 286447,
+                    "party": "DVG",
+                    "pool": "Centre-gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Alain Krivine",
+                    "res_100": 1.15,
+                    "res": 239104,
+                    "party": "LC",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                }
+            ],
+            "abs": {
+                "abs_100": 22.41,
+                "abs": 6614401
+            }
+        },
+        {
+            "date": "1969-06-15",
+            "label": "Présidentiellles 1969 - 2e tour",
+            "type:": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "Georges Pompidou",
+                    "res_100": 58.21,
+                    "res": 11064371 ,
+                    "party": "UDR (+CDP+RI)",
+                    "pool": "Droite",
+                    "level": 2
+                },
+                {
+                    "name": "Alain Poher",
+                    "res_100": 41.79,
+                    "res": 7943118 ,
+                    "party": "CD (+CR+CNIP+PDM)",
+                    "pool": "Centre",
+                    "level": 1
+                }
+            ],
+            "abs": {
+                "abs_100": 31.15,
+                "abs": 9189047
+            }
+        },
+        {
+            "date": "1973-03-04",
+            "label": "Législatives 1973 - 1er tour",
+            "step": 1,
+            "type:": "legis",
+            "results": [
+                {
+                    "name": "Parti communiste",
+                    "res_100": 21.41,
+                    "res": 5085436,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 19.1,
+                    "res": 4537348,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Parti socialiste unifié",
+                    "res_100": 1.95,
+                    "res": 463537,
+                    "party": "PSU",
+                    "pool": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Mouvement des radicaux de gauche",
+                    "res_100": 1.72,
+                    "res": 408734,
+                    "party": "MRG",
+                    "pool": "Centre-gauche",
+                    "level": 6
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 0.41,
+                    "res": 98331,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Républicains indépendants",
+                    "res_100": 7.16,
+                    "res": 1700806 ,
+                    "party": "FNRI",
+                    "pool": "Centre-droit",
+                    "level": 9
+                },
+                {
+                    "name": "Union des démocrates pour la République",
+                    "res_100": 24.19,
+                    "res": 5745542 ,
+                    "party": "UDR",
+                    "pool": "Droite",
+                    "level": 11
+                },
+                {
+                    "name": "Centre démocratie et progrès",
+                    "res_100": 3.85,
+                    "res": 914397,
+                    "party": "CDP",
+                    "pool": "Centre",
+                    "level": 8
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 5.08,
+                    "res": 1207166 ,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 10
+                },
+                {
+                    "name": "Mouvement réformateur",
+                    "res_100": 13.26,
+                    "res": 3149118,
+                    "party": "MR (CD+CR+PLE+DVC)",
+                    "pool": "Centre",
+                    "level": 7
+                },
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 1.24,
+                    "res": 294693,
+                    "party": "EXG (+LO+LCR+OCI)",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.13,
+                    "res": 147283,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+                    "level": 12
+                }
+            ],
+            "abs": {
+                "abs_100": 18.69,
+                "abs": 5584538 
+            }
+        },
+        {
+            "date": "1973-03-11",
+            "label": "Législatives 1973 - 2e tour",
+            "step": 2,
+            "type:": "legis",
+            "results": [
+                {
+                    "name": "Parti communiste",
+                    "res_100": 20.61 ,
+                    "res": 4402025 ,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 1,
+                    "seats": 73
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 22.17,
+                    "res": 4734889 ,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 3,
+                    "seats": 89
+                },
+                {
+                    "name": "Parti socialiste unifié",
+                    "res_100": 0.28,
+                    "res": 59448 ,
+                    "party": "PSU",
+                    "pool": "Gauche",
+                    "level": 2,
+                    "seats": 1
+                },
+                {
+                    "name": "Mouvement des radicaux de gauche",
+                    "res_100": 2.58,
+                    "res": 551445 ,
+                    "party": "MRG",
+                    "pool": "Centre-gauche",
+                    "level": 5,
+                    "seats": 12
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 0.54,
+                    "res": 116224,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 0
+                },
+                {
+                    "name": "Républicains indépendants",
+                    "res_100": 7.95,
+                    "res": 1696716,
+                    "party": "FNRI",
+                    "pool": "Centre-droit",
+                    "level": 8,
+                    "seats": 54
+                },
+                {
+                    "name": "Union des démocrates pour la République",
+                    "res_100": 33.26,
+                    "res": 7103036,
+                    "party": "UDR",
+                    "pool": "Droite",
+                    "level": 10,
+                    "seats": 184
+                },
+                {
+                    "name": "Centre démocratie et progrès",
+                    "res_100": 4.22,
+                    "res": 901109,
+                    "party": "CDP",
+                    "pool": "Centre",
+                    "level": 7,
+                    "seats": 23
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 1.60,
+                    "res": 340709,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 9,
+                    "seats": 19
+                },
+                {
+                    "name": "Mouvement réformateur",
+                    "res_100": 6.78,
+                    "res": 1448639,
+                    "party": "MR (CD+CR+PLE+DVC)",
+                    "pool": "Centre",
+                    "level": 6,
+                    "seats": 31
+                }
+            ],
+            "abs": {
+                "abs_100": 18.23,
+                "abs": 4923624
+            }
+        },
+        {
+            "date": "1974-05-05",
+            "label": "Présidentiellles 1974 - 1er tour",
+            "type:": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "François Mitterand",
+                    "res_100": 43.25,
+                    "res": 11044373 ,
+                    "party": "PS (+PCF+PRG)",
+                    "pool": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Valéry Giscard d'Estaing",
+                    "res_100": 32.6,
+                    "res": 8326774,
+                    "party": "FNRI (+CD+CR+CNIP)",
+                    "pool": "Centre-droit",
+                    "level": 9
+                },
+                {
+                    "name": "Jacques Chaban-Delmas",
+                    "res_100": 15.11,
+                    "res": 3857728,
+                    "party": "UDR +(CDP)",
+                    "pool": "Droite",
+                    "level": 10
+                },
+                {
+                    "name": "Jean Royer",
+                    "res_100": 3.17,
+                    "res": 810540,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 11
+                },
+                {
+                    "name": "Arlette Laguiller",
+                    "res_100": 2.33,
+                    "res": 595247,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                },
+                {
+                    "name": "René Dumont",
+                    "res_100": 1.32,
+                    "res": 337800,
+                    "party": "ECO",
+                    "pool": "Écologistes",
+                    "level": 4
+                },
+                {
+                    "name": "Jean-Marie Le Pen",
+                    "res_100": 0.75,
+                    "res": 190921,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 12
+                },
+                {
+                    "name": "Émile Muller",
+                    "res_100": 0.69,
+                    "res": 176279,
+                    "party": "MDSF",
+                    "pool": "Centre-gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Alain Krivine",
+                    "res_100": 0.37,
+                    "res": 93990,
+                    "party": "LCR",
+                    "pool": "Extrême gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Bertrand Renouvin",
+                    "res_100": 0.17,
+                    "res": 43722,
+                    "party": "NAF",
+                    "pool": "Divers",
+                    "level": 6
+                },
+                {
+                    "name": "Jean-Claude Sebag",
+                    "res_100": 0.16,
+                    "res": 42007,
+                    "party": "MFE",
+                    "pool": "Divers",
+                    "level": 8
+                },
+                {
+                    "name": "Guy Héraud",
+                    "res_100": 0.08,
+                    "res": 19255,
+                    "party": "PFE",
+                    "pool": "Divers",
+                    "level": 7
+                }
+            ],
+            "abs": {
+                "abs_100": 15.77,
+                "abs": 4827210
+            }
+        },
+        {
+            "date": "1974-05-19",
+            "label": "Présidentiellles 1974 - 2e tour",
+            "type:": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "François Mitterand",
+                    "res_100": 49.19,
+                    "res": 12971604 ,
+                    "party": "PS (+PCF+PRG)",
+                    "pool": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Valéry Giscard d'Estaing",
+                    "res_100": 50.81,
+                    "res": 13396203,
+                    "party": "FNRI (+CD+CR+CNIP)",
+                    "pool": "Centre-droit",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 12.67,
+                "abs": 3876180 
+            }
         }
     ]
  }
