@@ -1,5 +1,4 @@
-window.onload=()=>{
-
+window.onload=()=>{    
     const cb = document.querySelector('#step');
 	cb.addEventListener('change', plotChart);
     plotChart();
@@ -24,20 +23,37 @@ function plotChart() {
                     "level": -1
                 })
             });
+            elec.mergedResults = elec.results.reduce((acc, obj) => {
+                const existingObj = acc.find(item => item.pool === obj.pool);
+                if (existingObj) {
+                  existingObj.name += '/' + obj.name;
+                  existingObj.party += '/' + obj.party;
+                  existingObj.res_100 += obj.res_100;
+                  existingObj.res += obj.res;
+                  existingObj.level.push(obj.level);
+                } else {
+                  acc.push({
+                    ...obj,
+                    level: [obj.level]
+                  });
+                }
+                return acc;
+              }, []);
         });
+        console.log(data.data)
         allRes = data.data.filter((elec) => elec.step == stepFilter).map(elec => {
-            elec.results.forEach(res => {
+            elec.mergedResults.forEach(res => {
                 res["date"] = elec.date
             });
-            return elec.results.sort((a,b) => b.level - a.level);
+            return elec.mergedResults.sort((a,b) => b.level - a.level);
         }).flat();
         chart = StackedAreaChart(allRes, {
             x: res => d3.timeParse("%Y-%m-%d")(res.date),
-            y: res => res.res_100,
+            y: res => res.res,
             z: res => res.pool,
             yLabel: "↑ Résultat",
             zDomain:  PARTY_POOLS.reverse(),
-            width: 1200,
+            width: 1500,
             height: 800
         });
         document.getElementById("chart").append(chart);
