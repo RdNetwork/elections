@@ -1,17 +1,18 @@
  {
     "data": [
         {
-            "year": 1965,
-            "month": 12,
+            "date": "1965-12-05",
+            "label": "Présidentiellles 1965 - 1er tour",
             "type:": "pres",
-            "results_1": [
+            "step": 1,
+            "results": [
                 {
                     "name": "Charles de Gaulle",
                     "res_100": 44.65,
                     "res": 10828521,
                     "party": "UNR-UDT (+RI)",
                     "pool": "Droite",
-                    "level": ""
+                    "level": 5
                 },
                 {
                     "name": "François Mitterand",
@@ -19,7 +20,7 @@
                     "res": 7694005,
                     "party": "CIR (SFIO+PCF+PR+PSU)",
                     "pool": "Gauche",
-                    "level": ""
+                    "level": 1
                 },
                 {
                     "name": "Jean Lecanuet",
@@ -27,7 +28,7 @@
                     "res": 3777120,
                     "party": "MRP (+CNIP)",
                     "pool": "Centre",
-                    "level": ""
+                    "level": 4
                 },
                 {
                     "name": "Jean-Louis Tixier-Vignancour",
@@ -35,7 +36,7 @@
                     "res": 1260208,
                     "party": "CTV",
                     "pool": "Extrême droite",
-                    "level": ""
+                    "level": 6
                 },
                 {
                     "name": "Pierre Marcilhacy",
@@ -43,7 +44,7 @@
                     "res": 415017,
                     "party": "PLE",
                     "pool": "Centre",
-                    "level": ""
+                    "level": 3
                 },
                 {
                     "name": "Marcel Barbu",
@@ -51,21 +52,27 @@
                     "res": 279685,
                     "party": "Sans étiquette",
                     "pool": "Divers",
-                    "level": ""
+                    "level": 2
                 }
             ],
-            "abs_1": {
+            "abs": {
                 "abs_100": 15.25,
                 "abs": 4407665
+            }
             },
-            "results_2": [
+        {
+            "date": "1965-12-19",
+            "label": "Présidentiellles 1965 - 2e tour",
+            "type:": "pres",
+            "step": 2,
+            "results": [
                 {
                     "name": "Charles de Gaulle",
                     "res_100": 55.2,
                     "res": 13083699,
                     "party": "UNR-UDT (+RI)",
                     "pool": "Droite",
-                    "level": ""
+                    "level": 2
                 },
                 {
                     "name": "François Mitterand",
@@ -73,34 +80,35 @@
                     "res": 10619735,
                     "party": "CIR (SFIO+PCF+PR+PSU)",
                     "pool": "Gauche",
-                    "level": ""
+                    "level": 1
                 }
             ],
-            "abs_2": {
+            "abs": {
                 "abs_100": 15.68,
                 "abs": 4531057
             }
         },
         {
-            "year": 1967,
-            "month": 3,
+            "date": "1967-03-05",
+            "label": "Législatives 1967 - 1er tour",
+            "step": 1,
             "type:": "legis",
-            "results_1": [
+            "results": [
                 {
                     "name": "Parti communiste",
                     "res_100": 22.46,
                     "res": 5029808,
                     "party": "PCF",
                     "pool": "Gauche radicale",
-                    "level": ""
+                    "level": 1
                 },
                 {
                     "name": "Fédération de la gauche démocrate et socialiste",
                     "res_100": 18.79,
                     "res": 4207166,
-                    "party": "FIDR (SFIO+CIR+PR)",
+                    "party": "FGDS (SFIO+CIR+PR)",
                     "pool": "Gauche",
-                    "level": ""
+                    "level": 3
                 },
                 {
                     "name": "Parti socialiste unifié / Divers gauche",
@@ -108,7 +116,7 @@
                     "res": 506592,
                     "party": "PSU (+DVG)",
                     "pool": "Gauche",
-                    "level": ""
+                    "level": 2
                 },
                 {
                     "name": "Union des républicains de progrès",
@@ -116,7 +124,7 @@
                     "res": 8453512,
                     "party": "UDVe (+DVD)",
                     "pool": "Droite",
-                    "level": ""
+                    "level": 6
                 },
                 {
                     "name": "Centre démocrate",
@@ -124,7 +132,7 @@
                     "res": 2864512,
                     "party": "CD",
                     "pool": "Centre",
-                    "level": ""
+                    "level": 5
                 },
                 {
                     "name": "Divers / Sans étiquette",
@@ -132,7 +140,7 @@
                     "res": 1136191,
                     "party": "Divers",
                     "pool": "Divers",
-                    "level": ""
+                    "level": 4
                 },
                 {
                     "name": "Divers extrême droite",
@@ -140,14 +148,20 @@
                     "res": 194776,
                     "party": "Divers extrême droite",
                     "pool": "Extrême droite",
-                    "level": ""
+                    "level": 7
                 }
             ],
-            "abs_1": {
+            "abs": {
                 "abs_100": 19.1,
                 "abs": 5404687
+            }
             },
-            "results_2": [
+        {
+            "date": "1967-03-12",
+            "label": "Législatives 1967 - 2e tour",
+            "step": 2,
+            "type:": "legis",
+            "results": [
                 {
                     "name": "Parti communiste",
                     "res_100": 21.37,
@@ -155,7 +169,7 @@
                     "party": "PCF",
                     "pool": "Gauche radicale",
                     "seats": 73,
-                    "level": ""
+                    "level": 1
                 },
                 {
                     "name": "Fédération de la gauche démocrate et socialiste",
@@ -164,7 +178,7 @@
                     "party": "FIDR (SFIO+CIR+PR)",
                     "pool": "Gauche",
                     "seats": 116,
-                    "level": ""
+                    "level": 3
                 },
                 {
                     "name": "Parti socialiste unifié / Divers gauche",
@@ -173,7 +187,7 @@
                     "party": "PSU (+DVG)",
                     "pool": "Gauche",
                     "seats": 10,
-                    "level": ""
+                    "level": 2
                 },
                 {
                     "name": "Union des républicains de progrès",
@@ -182,7 +196,7 @@
                     "party": "UDVe (+DVD)",
                     "pool": "Droite",
                     "seats": 259,
-                    "level": ""
+                    "level": 5
                 },
                 {
                     "name": "Centre démocrate",
@@ -191,7 +205,7 @@
                     "party": "CD",
                     "pool": "Centre",
                     "seats": 27,
-                    "level": ""
+                    "level": 4
                 },
                 {
                     "name": "Divers extrême droite",
@@ -200,10 +214,10 @@
                     "party": "Divers extrême droite",
                     "pool": "Extrême droite",
                     "seats": 0,
-                    "level": ""
+                    "level": 6
                 }
             ],
-            "abs_2": {
+            "abs": {
                 "abs_100": 20,
                 "abs": 5650000
             }
