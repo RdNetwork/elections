@@ -49,7 +49,11 @@ function plotChart() {
         const cbTypes = [document.querySelector('#filterPres'), document.querySelector('#filterLegis'), document.querySelector('#filterEuro')];
 
         data.data.forEach((elec) => {
+            // Remplissage du calendrier
             CALENDAR[elec.type].push(elec.date);
+
+            // Regroupement des courants politiques identiques
+            // 1) On ajoute les courants manquants à toutes les élections
             PARTY_POOLS.filter(pool => !(elec.results.some(cand => cand.pool === pool))).forEach((missingPool) => {
                 elec.results.push({
                     "name": "[Aucun]",
@@ -60,6 +64,8 @@ function plotChart() {
                     "level": -1
                 })
             });
+            // 2) On fusionne en additionnant les scores et en réunissant le reste
+            // (On en profite aussi pour insérer le bloc politique global)
             elec.mergedResults = elec.results.reduce((acc, obj) => {
                 const existingObj = acc.find(item => item.pool === obj.pool);
                 if (existingObj) {
@@ -88,19 +94,27 @@ function plotChart() {
             .filter((elec) => elec.step == stepFilter || elec.step == 0)    // Switch tour
             .filter((elec) => selectedTypes.includes(elec.type) || selectedTypes.length === 0)
             .map(elec => {
+                // On insére la date de l'élection dans chaque résultat (car les résultats sont "aplatis")
             elec.mergedResults.forEach(res => {
                 res["date"] = elec.date
             });
+                // On trie aussi sur un axe gauche-droite
             return elec.mergedResults.sort((a,b) => b.level - a.level);
-        }).flat();
+            })
+            .flat();
+
+        // Création du graphique
         chart = StackedAreaChart(allRes, {
             x: res => d3.timeParse("%Y-%m-%d")(res.date),
             y: res => res.res,
             z: res => cbFam.checked ? res.family : res.pool,    // Switch courants/blocs
             zDomain:  PARTY_POOLS.reverse(),
+            width: 1800,
+            height: 700,
             offset: cbQty.checked ? d3.stackOffsetNone : d3.stackOffsetExpand,
             yFormat: cbQty.checked ? null : "%"
         });
+        // Ajout du graphique SVG à la page
         document.getElementById("chart").append(chart);
     })   
 }
@@ -116,7 +130,7 @@ function StackedAreaChart(data, {
     marginTop = 20, // top margin, in pixels
     marginRight = 30, // right margin, in pixels
     marginBottom = 30, // bottom margin, in pixels
-    marginLeft = 40, // left margin, in pixels
+    marginLeft = 70, // left margin, in pixels
     width = 640, // outer width, in pixels
     height = 400, // outer height, in pixels
     xType = d3.scaleUtc, // type of x-scale
@@ -182,6 +196,7 @@ function StackedAreaChart(data, {
     const yAxis = d3.axisLeft(yScale).ticks(height / 50, yFormat);
   
     const area = d3.area()
+        .curve(d3.curveMonotoneX)
         .x((point) =>  {
             let {i} = point
             if (i)
