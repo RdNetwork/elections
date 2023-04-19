@@ -10,7 +10,29 @@ window.onload=()=>{
     plotChart();
 }
 
-const PARTY_POOLS = ["Extrême gauche", "Gauche radicale", "Gauche", "Écologistes", "Centre-gauche", "Divers", "Centre", "Centre-droit", "Droite", "Droite souverainiste", "Extrême droite"];
+// Courant politiques
+const PARTY_POOLS = ["Extrême gauche", "Gauche radicale", "Gauche", "Écologistes", "Centre-gauche", "Divers", "Centre", "Centre-droit", "Droite", "Droite souverainiste/radicale", "Extrême droite"];
+// Lien entre courants et blocs
+const POOLS_FAMILY = {
+    "Extrême gauche": "Gauche",
+    "Gauche radicale": "Gauche",
+    "Gauche": "Gauche", 
+    "Écologistes": "Gauche",
+    "Centre-gauche": "Gauche",
+    "Divers": "Centre",
+    "Centre": "Centre",
+    "Centre-droit": "Droite", 
+    "Droite": "Droite", 
+    "Droite souverainiste/radicale": "Droite",
+    "Extrême droite": "Droite"
+}
+// Calendrier par type d'élection (rempli pendant l'exécution)
+const CALENDAR = {
+    "legis": [],
+    "pres": [],
+    "euro": [],
+}
+const TYPE_LABELS = {"legis": "Législatives", "pres" : "Présidentielles", "euro": "Européennes"}
 
 function plotChart() {
     document.getElementById("chart").innerHTML = ''
@@ -27,6 +49,7 @@ function plotChart() {
         const cbTypes = [document.querySelector('#filterPres'), document.querySelector('#filterLegis'), document.querySelector('#filterEuro')];
 
         data.data.forEach((elec) => {
+            CALENDAR[elec.type].push(elec.date);
             PARTY_POOLS.filter(pool => !(elec.results.some(cand => cand.pool === pool))).forEach((missingPool) => {
                 elec.results.push({
                     "name": "[Aucun]",
@@ -45,14 +68,17 @@ function plotChart() {
                   existingObj.res_100 += obj.res_100;
                   existingObj.res += obj.res;
                   existingObj.level.push(obj.level);
+                  existingObj.family = POOLS_FAMILY[existingObj.pool]
                 } else {
                   acc.push({
                     ...obj,
-                    level: [obj.level]
+                    level: [obj.level],
+                    family: POOLS_FAMILY[obj.pool]
                   });
                 }
                 return acc;
-              }, []);
+                }, []
+            );
         });
         
         
