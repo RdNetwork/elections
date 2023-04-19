@@ -830,6 +830,1718 @@
                 "abs_100": 12.67,
                 "abs": 3876180 
             }
+        },
+        {
+            "date": "1978-03-12",
+            "label": "Législatives 1978 - 1er tour",
+            "step": 1,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Parti communiste",
+                    "res_100": 20.71,
+                    "res": 5818245,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 3
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 25.06,
+                    "res": 7040561,
+                    "party": "PS (+MRG)",
+                    "pool": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Gaullistes d'opposition",
+                    "res_100": 0.62,
+                    "res": 174536,
+                    "party": "FRP+UGP+MDD",
+                    "pool": "Centre-gauche",
+                    "level": 7
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 0.35,
+                    "res": 98771,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 22.6,
+                    "res": 6350528,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 10
+                },
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 20.77,
+                    "res": 5834744,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 8
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 3.79,
+                    "res": 1064841,
+                    "party": "DVD (+PSD)",
+                    "pool": "Droite",
+                    "level": 9
+                },
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 2.18,
+                    "res": 611345,
+                    "party": "LO+LCR+OCI",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 2.13,
+                    "res": 597963,
+                    "party": "ECO",
+                    "pool": "Écologistes",
+                    "level": 6
+                },
+                {
+                    "name": "Front autogestionnaire",
+                    "res_100": 1.03,
+                    "res": 289011,
+                    "party": "FA",
+                    "pool": "Gauche radicale",
+                    "level": 2
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.76,
+                    "res": 214026,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+                    "level": 11
+                }
+            ],
+            "abs": {
+                "abs_100": 17.08,
+                "abs": 5885468 
+            }
+        },
+        {
+            "date": "1978-03-19",
+            "label": "Législatives 1978 - 2e tour",
+            "step": 2,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Parti communiste",
+                    "res_100": 18.8,
+                    "res": 4764704,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 1,
+                    "seats": 86
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 30.73,
+                    "res": 7788076,
+                    "party": "PS (+MRG)",
+                    "pool": "Gauche",
+                    "level": 2,
+                    "seats": 113
+                },
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 25.91,
+                    "res": 6565281,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 5,
+                    "seats": 148
+                },
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 22.75,
+                    "res": 5766063,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 3,
+                    "seats": 137
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 1.8,
+                    "res": 455759,
+                    "party": "DVD (+PSD)",
+                    "pool": "Droite",
+                    "level": 4,
+                    "seats": 6
+                }
+            ],
+            "abs": {
+                "abs_100": 15.21,
+                "abs": 4656348
+            }
+        },
+        {
+            "date": "1979-06-10",
+            "label": "Européennes 1979 - Tour unique",
+            "step": 0,
+            "type": "euro",
+            "results": [
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 27.61,
+                    "res": 5588851,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 7,
+                    "seats": 25
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 23.53,
+                    "res": 4763026,
+                    "party": "PS (+MRG)",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 22
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 20.52,
+                    "res": 4153710,
+                    "party": "PCF (+UP)",
+                    "pool": "Gauche radicale",
+                    "level": 3,
+                    "seats": 19
+                },
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 16.31,
+                    "res": 3301980,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 9,
+                    "seats": 15
+                },
+                {
+                    "name": "Europe Écologie - Les Verts",
+                    "res_100": 4.39,
+                    "res": 888134,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers droite radicale",
+                    "res_100": 1.4,
+                    "res": 283144,
+                    "party": "EEE",
+                    "pool": "Droite souverainiste/radicale",
+                    "level": 10,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti radical-valoisien",
+                    "res_100": 1.84,
+                    "res": 373259,
+                    "party": "PR",
+                    "pool": "Centre-droit",
+                    "level": 8,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti des forces nouvelles",
+                    "res_100": 1.31,
+                    "res": 265911,
+                    "party": "PFN",
+                    "pool": "Extrême droite",
+                    "level": 11,
+                    "seats": 0
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0,
+                    "res": 337,
+                    "party": "REG",
+                    "pool": "Divers",
+                    "level": 6,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti socialiste unifié",
+                    "res_100": 0,
+                    "res": 332,
+                    "party": "PSU",
+                    "pool": "Gauche radicale",
+                    "level": 2,
+                    "seats": 0
+                },
+                {
+                    "name": "Lutte ouvrière",
+                    "res_100": 3.08,
+                    "res": 623663,
+                    "party": "LO (+LCR)",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 39.03,
+                "abs": 13775397 
+            }
+        },
+        {
+            "date": "1981-04-26",
+            "label": "Présidentiellles 1981 - 1er tour",
+            "type": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "François Mitterand",
+                    "res_100": 25.85,
+                    "res": 7505960 ,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Valéry Giscard d'Estaing",
+                    "res_100": 28.32,
+                    "res": 8222432,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 7
+                },
+                {
+                    "name": "Jacques Chirac",
+                    "res_100": 18,
+                    "res": 5225848,
+                    "party": "RPR (+CNIP)",
+                    "pool": "Droite",
+                    "level": 9
+                },
+                {
+                    "name": "Georges Marchais",
+                    "res_100": 15.35,
+                    "res": 4456922,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 3
+                },
+                {
+                    "name": "Arlette Laguiller",
+                    "res_100": 2.3,
+                    "res": 668057,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Brice Lalonde",
+                    "res_100": 3.88,
+                    "res": 1126254,
+                    "party": "ECO",
+                    "pool": "Écologistes",
+                    "level": 6
+                },
+                {
+                    "name": "Michel Crépeau",
+                    "res_100": 2.21,
+                    "res": 642847,
+                    "party": "MRG",
+                    "pool": "Centre-gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Michel Debré",
+                    "res_100": 1.66,
+                    "res": 481821,
+                    "party": "RPR diss.",
+                    "pool": "Droite",
+                    "level": 8
+                },
+                {
+                    "name": "Marie-France Garaud",
+                    "res_100": 1.33,
+                    "res": 386623,
+                    "party": "RPR diss.",
+                    "pool": "Droite",
+                    "level": 10
+                },
+                {
+                    "name": "Huguette Bouchardeau",
+                    "res_100": 1.11,
+                    "res": 321353,
+                    "party": "PSU",
+                    "pool": "Gauche radicale",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 18.91,
+                "abs": 6882777
+            }
+        },
+        {
+            "date": "1981-05-10",
+            "label": "Présidentiellles 1981 - 2e tour",
+            "type": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "François Mitterand",
+                    "res_100": 51.76,
+                    "res": 15708262 ,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Valéry Giscard d'Estaing",
+                    "res_100": 48.24,
+                    "res": 14642306,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 14.15,
+                "abs": 5149210 
+            }
+        },
+        {
+            "date": "1984-06-17",
+            "label": "Européennes 1984 - Tour unique",
+            "step": 0,
+            "type": "euro",
+            "results": [
+                {
+                    "name": "Union démocratique française / Rassemblement pour la République",
+                    "res_100": 43.02,
+                    "res": 8683596,
+                    "party": "UDF (+RPR)",
+                    "pool": "Centre-droit",
+                    "level": 12,
+                    "seats": 41
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 20.75,
+                    "res": 4188875,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 5,
+                    "seats": 20
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 11.2,
+                    "res": 2261712,
+                    "party": "PCF (+UP)",
+                    "pool": "Gauche radicale",
+                    "level": 3,
+                    "seats": 10
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 10.95,
+                    "res": 2210334,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 14,
+                    "seats": 10
+                },
+                {
+                    "name": "Europe Écologie - Les Verts",
+                    "res_100": 3.36,
+                    "res": 678079,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+                    "level": 6,
+                    "seats": 0
+                },
+                {
+                    "name": "Radicaux et divers écologistes",
+                    "res_100": 3.32,
+                    "res": 670007,
+                    "party": "MRG (+ECO+UCR)",
+                    "pool": "Centre-gauche",
+                    "level": 7,
+                    "seats": 0
+                },
+                {
+                    "name": "Lutte ouvrière",
+                    "res_100": 2.07,
+                    "res": 417745,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers droite / fédéraliste",
+                    "res_100": 1.89,
+                    "res": 381419,
+                    "party": "UDF diss.",
+                    "pool": "Droite",
+                    "level": 13,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti communiste internationaliste / Divers extrême gauche",
+                    "res_100": 0.90,
+                    "res": 181628,
+                    "party": "UCI (+EXG)",
+                    "pool": "Extrême gauche",
+                    "level": 2,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti socialiste unifié",
+                    "res_100": 0.72,
+                    "res": 145302,
+                    "party": "PSU (+CDU)",
+                    "pool": "Gauche radicale",
+                    "level": 4,
+                    "seats": 0
+                },
+                {
+                    "name": "Union des travailleurs indépendants",
+                    "res_100": 0.68,
+                    "res": 137230,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 11,
+                    "seats": 0
+                },
+                {
+                    "name": "Initiative 84",
+                    "res_100": 0.60,
+                    "res": 121085,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 10,
+                    "seats": 0
+                },
+                {
+                    "name": "Union des fédéralistes européens",
+                    "res_100": 0.38,
+                    "res": 76687,
+                    "party": "UFE",
+                    "pool": "Divers",
+                    "level": 9,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti ouvrier européen",
+                    "res_100": 0.08,
+                    "res": 16144,
+                    "party": "POE",
+                    "pool": "Divers",
+                    "level": 8,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 43.28,
+                "abs": 15961996 
+            }
+        },
+        {
+            "date": "1986-03-16",
+            "label": "Législatives 1986 - Tour unique",
+            "step": 0,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 31.02,
+                    "res": 8693939,
+                    "party": "PCF",
+                    "pool": "Gauche",
+                    "level": 3,
+                    "seats": 206
+                },
+                {
+                    "name": "Listes communes RPR / UDF",
+                    "res_100": 21.44,
+                    "res": 6008612,
+                    "party": "RPR+UDF",
+                    "pool": "Droite",
+                    "level": 10,
+                    "seats": 147
+                },
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 11.22,
+                    "res": 3143224,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 11,
+                    "seats": 67
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 9.78,
+                    "res": 2739925,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2,
+                    "seats": 35
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 9.65,
+                    "res": 2703442,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 13,
+                    "seats": 35
+                },
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 8.31,
+                    "res": 2330167,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 9,
+                    "seats": 53
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 3.87,
+                    "res": 1083711,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 12,
+                    "seats": 14
+                },
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 1.54,
+                    "res": 430352,
+                    "party": "EXG",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 1.21,
+                    "res": 340109,
+                    "party": "ECO",
+                    "pool": "Écologistes",
+                    "level": 6,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.0,
+                    "res": 301063,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 5
+                },
+                {
+                    "name": "Mouvement des radicaux de gauche",
+                    "res_100": 0.38,
+                    "res": 107769,
+                    "party": "MRG",
+                    "pool": "Centre-gauche",
+                    "level": 7,
+                    "seats": 2
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.2,
+                    "res": 57432,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+                    "level": 14,
+                    "seats": 0
+                },
+                {
+                    "name": "UNG / Divers gauche d'outre-mer",
+                    "res_100": 0.2,
+                    "res": 56044,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.1,
+                    "res": 28379,
+                    "party": "REG",
+                    "pool": "Divers",
+                    "level": 8,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 21.5,
+                "abs": 7878658 
+            }
+        },
+        {
+            "date": "1988-04-24",
+            "label": "Présidentiellles 1988 - 1er tour",
+            "type": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "François Mitterand",
+                    "res_100": 34.1,
+                    "res": 10367220 ,
+                    "party": "PS (+MRG)",
+                    "pool": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Jacques Chirac",
+                    "res_100": 19.94,
+                    "res": 6063514 ,
+                    "party": "RPR (+CNIP)",
+                    "pool": "Droite",
+                    "level": 8
+                },
+                {
+                    "name": "Raymond Barre",
+                    "res_100": 16.55,
+                    "res": 5031849 ,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 7
+                },
+                {
+                    "name": "Jean-Marie Le Pen",
+                    "res_100": 14.39,
+                    "res": 4375894,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 9
+                },
+                {
+                    "name": "André Lajoinie",
+                    "res_100": 6.76,
+                    "res": 2055995,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 4
+                },
+                {
+                    "name": "Antoine Waechter",
+                    "res_100": 3.78,
+                    "res": 1149642,
+                    "party": "Verts",
+                    "pool": "Écologistes",
+                    "level": 6
+                },
+                {
+                    "name": "Pierre Juquin",
+                    "res_100": 2.1,
+                    "res": 639084,
+                    "party": "NGSEA (+PSU+LCR)",
+                    "pool": "Gauche radicale",
+                    "level": 3
+                },
+                {
+                    "name": "Arlette Laguiller",
+                    "res_100": 1.99,
+                    "res": 606017,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Pierre Boussel",
+                    "res_100": 0.38,
+                    "res": 116823,
+                    "party": "MPPT",
+                    "pool": "Extrême gauche",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 18.62,
+                "abs": 7100535
+            }
+        },
+        {
+            "date": "1988-05-08",
+            "label": "Présidentiellles 1988 - 2e tour",
+            "type": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "François Mitterand",
+                    "res_100": 54.02,
+                    "res": 16704279 ,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Jacques Chirac",
+                    "res_100": 45.98,
+                    "res": 14218970,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 15.94,
+                "abs": 6083798 
+            }
+        },
+        {
+            "date": "1988-06-05",
+            "label": "Législatives 1988 - 1er tour",
+            "step": 1,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0.36,
+                    "res": 89065,
+                    "party": "EXG",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 11.32,
+                    "res": 2765761,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2,
+                    "seats": 27
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 34.76,
+                    "res": 8493702,
+                    "party": "PS (+PSU)",
+                    "pool": "Gauche",
+                    "level": 3,
+                    "seats": 263
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.65,
+                    "res": 403690,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 7
+                },
+                {
+                    "name": "Mouvement des radicaux de gauche",
+                    "res_100": 1.14,
+                    "res": 279316,
+                    "party": "MRG",
+                    "pool": "Centre-gauche",
+                    "level": 6,
+                    "seats": 9
+                },
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 19.18,
+                    "res": 4687047,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 10,
+                    "seats": 129
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 0.35,
+                    "res": 86312,
+                    "party": "ECO",
+                    "pool": "Écologistes",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.08,
+                    "res": 18498,
+                    "party": "REG",
+                    "pool": "Divers",
+                    "level": 7,
+                    "seats": 0
+                },
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 18.5,
+                    "res": 4519459,
+                    "party": "UDF (+CDS+PR)",
+                    "pool": "Centre-droit",
+                    "level": 8,
+                    "seats": 131
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 2.85,
+                    "res": 697272,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 9,
+                    "seats": 10
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 9.66,
+                    "res": 2359528,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 11,
+                    "seats": 1
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.13,
+                    "res": 32445,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+                    "level": 12,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 34.26,
+                "abs": 13000790 
+            }
+        },
+        {
+            "date": "1988-06-12",
+            "label": "Législatives 1988 - 2e tour",
+            "step": 2,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0.36,
+                    "res": 89065,
+                    "party": "EXG",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 11.32,
+                    "res": 2765761,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2,
+                    "seats": 27
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 34.76,
+                    "res": 8493702,
+                    "party": "PS (+PSU)",
+                    "pool": "Gauche",
+                    "level": 3,
+                    "seats": 263
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.65,
+                    "res": 403690,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 7
+                },
+                {
+                    "name": "Mouvement des radicaux de gauche",
+                    "res_100": 1.14,
+                    "res": 279316,
+                    "party": "MRG",
+                    "pool": "Centre-gauche",
+                    "level": 6,
+                    "seats": 9
+                },
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 19.18,
+                    "res": 4687047,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 10,
+                    "seats": 129
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 0.35,
+                    "res": 86312,
+                    "party": "ECO",
+                    "pool": "Écologistes",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.08,
+                    "res": 18498,
+                    "party": "REG",
+                    "pool": "Divers",
+                    "level": 7,
+                    "seats": 0
+                },
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 18.5,
+                    "res": 4519459,
+                    "party": "UDF (+CDS+PR)",
+                    "pool": "Centre-droit",
+                    "level": 8,
+                    "seats": 131
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 2.85,
+                    "res": 697272,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 9,
+                    "seats": 10
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 9.66,
+                    "res": 2359528,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 11,
+                    "seats": 1
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.13,
+                    "res": 32445,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+                    "level": 12,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 30.11,
+                "abs": 9047691 
+            }
+        },
+        {
+            "date": "1989-06-18",
+            "label": "Européennes 1989 - Tour unique",
+            "step": 0,
+            "type": "euro",
+            "results": [
+                {
+                    "name": "Union démocratique française / Rassemblement pour la République",
+                    "res_100": 28.88,
+                    "res": 5242038 ,
+                    "party": "UDF+RPR+CNIP",
+                    "pool": "Droite",
+                    "level": 13,
+                    "seats": 26
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 23.61,
+                    "res": 4286354,
+                    "party": "PS (+MRG)",
+                    "pool": "Gauche",
+                    "level": 5,
+                    "seats": 22
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 11.73,
+                    "res": 2129668,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 15,
+                    "seats": 10
+                },
+                {
+                    "name": "Europe Écologie - Les Verts",
+                    "res_100": 10.59,
+                    "res": 1922945,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+                    "level": 6,
+                    "seats": 9
+                },
+                {
+                    "name": "Divers centre et divers droite",
+                    "res_100": 8.43,
+                    "res": 1519346,
+                    "party": "UDF diss. + DVC",
+                    "pool": "Centre-droit",
+                    "level": 12,
+                    "seats": 7
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 7.72,
+                    "res": 1401171,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 3,
+                    "seats": 7
+                },
+                {
+                    "name": "Chasse, pêche, nature et traditions",
+                    "res_100": 4.13,
+                    "res": 749741,
+                    "party": "CPNT",
+                    "pool": "Droite souverainiste/radicale",
+                    "level": 14,
+                    "seats": 0
+                },
+                {
+                    "name": "Lutte ouvrière",
+                    "res_100": 1.43,
+                    "res": 258663,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Animalisste",
+                    "res_100": 1.04,
+                    "res": 188573,
+                    "party": "ANIM",
+                    "pool": "Divers",
+                    "level": 7,
+                    "seats": 0
+                },
+                {
+                    "name": "Alliance",
+                    "res_100": 0.75,
+                    "res": 136230,
+                    "party": "DVD",
+                    "pool": "Divers droite",
+                    "level": 11,
+                    "seats": 0
+                },
+                {
+                    "name": "Mouvement pour un parti des travailleurs",
+                    "res_100": 0.6,
+                    "res": 109523,
+                    "party": "MPPT",
+                    "pool": "Extrême gauche",
+                    "level": 2,
+                    "seats": 0
+                },
+                {
+                    "name": "Europe rénovateurs",
+                    "res_100": 0.41,
+                    "res": 74327,
+                    "party": "PCF diss.",
+                    "pool": "Gauche radicale",
+                    "level": 4,
+                    "seats": 0
+                },
+                {
+                    "name": "Génération Europe",
+                    "res_100": 0.33,
+                    "res": 58995,
+                    "party": "DVC",
+                    "pool": "Divers",
+                    "level": 10,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti ouvrier européen",
+                    "res_100": 0.18,
+                    "res": 32295,
+                    "party": "POE",
+                    "pool": "Divers",
+                    "level": 9,
+                    "seats": 0
+                },
+                {
+                    "name": "Initiative pour une démocratie européenne",
+                    "res_100": 0.17,
+                    "res": 31547,
+                    "party": "DVC",
+                    "pool": "Divers",
+                    "level": 8,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 51.2,
+                "abs": 9293524 
+            }
+        },
+        {
+            "date": "1993-03-21",
+            "label": "Législatives 1993 - 1er tour",
+            "step": 1,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 20.22,
+                    "res": 5119310,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 12
+                },
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 18.81,
+                    "res": 4760593,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 10
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 17.5,
+                    "res": 4429237,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 12.48,
+                    "res": 3158232,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 13
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 9.25,
+                    "res": 2342600,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 5.1,
+                    "res": 1290534,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 11
+                },
+                {
+                    "name": "Les Verts",
+                    "res_100": 4.05,
+                    "res": 1024551,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+                    "level": 5
+                },
+                {
+                    "name": "Génération écologie",
+                    "res_100": 3.64,
+                    "res": 920643,
+                    "party": "GECO",
+                    "pool": "Écologistes",
+                    "level": 7
+                },
+                {
+                    "name": "Divers",
+                    "res_100": 3.78,
+                    "res": 956599,
+                    "party": "DVC",
+                    "pool": "Divers",
+                    "level": 8
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.9,
+                    "res": 482154,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 1.78,
+                    "res": 449979,
+                    "party": "EXG",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Parti radical de gauche",
+                    "res_100": 0.91,
+                    "res": 231370,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+                    "level": 6
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.32,
+                    "res": 81404,
+                    "party": "REG",
+                    "pool": "Divers",
+                    "level": 9
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.27,
+                    "res": 68363,
+                    "party": "EXD",
+                    "pool": "Extrême droite"
+                    ,
+                    "level": 14
+                }
+            ],
+            "abs": {
+                "abs_100": 31.07,
+                "abs": 12172518 
+            }
+        },
+        {
+            "date": "1993-03-28",
+            "label": "Législatives 1993 - 2e tour",
+            "step": 2,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Rassemblement pour la République",
+                    "res_100": 28.06,
+                    "res": 5709859,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 11,
+                    "seats": 242
+                },
+                {
+                    "name": "Union démocratique française",
+                    "res_100": 25.36,
+                    "res": 5160916,
+                    "party": "UDF",
+                    "pool": "Centre-droit",
+                    "level": 9,
+                    "seats": 206
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 28,
+                    "res": 5697795,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 57
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 5.74,
+                    "res": 1168192,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 12,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 4.69,
+                    "res": 954697,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2,
+                    "seats": 25
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 4.22,
+                    "res": 859497,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 10,
+                    "seats": 36
+                },
+                {
+                    "name": "Les Verts",
+                    "res_100": 0.1,
+                    "res": 20088,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "Génération écologie",
+                    "res_100": 0.09,
+                    "res": 17403,
+                    "party": "GECO",
+                    "pool": "Écologistes",
+                    "level": 7,
+                    "seeats": 0
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 2.37,
+                    "res": 482844,
+                    "party": "DVG",
+                    "pool": "Gauche",
+                    "level": 3,
+                    "seeats": 8
+                },
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0.11,
+                    "res": 22509,
+                    "party": "EXG",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seeats": 0
+                },
+                {
+                    "name": "Parti radical de gauche",
+                    "res_100": 1.16,
+                    "res": 235158,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+                    "level": 6,
+                    "seats": 3
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.09,
+                    "res": 17912,
+                    "party": "REG",
+                    "pool": "Divers",
+                    "level": 8,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 32.44,
+                "abs": 10938689 
+            }
+        },
+        {
+            "date": "1994-06-12",
+            "label": "Européennes 1994 - Tour unique",
+            "step": 0,
+            "type": "euro",
+            "results": [
+                {
+                    "name": "Union démocratique française / Rassemblement pour la République",
+                    "res_100": 25.58,
+                    "res": 4985574 ,
+                    "party": "RPR+UDF",
+                    "pool": "Droite",
+                    "level": 17,
+                    "seats": 28
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 14.49,
+                    "res": 2824173 ,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 4,
+                    "seats": 15
+                },
+                {
+                    "name": "Droite souverainiste / dissidents UDF-RPR",
+                    "res_100": 12.34,
+                    "res": 2404105,
+                    "party": "UDF-RPR diss.",
+                    "pool": "Droite souverainiste/radicale",
+                    "level": 18,
+                    "seats": 13
+                },
+                {
+                    "name": "Parti radical de gauche",
+                    "res_100": 12.03,
+                    "res": 2344457,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+                    "level": 7,
+                    "seats": 13
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 10.52,
+                    "res": 2050086,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 20,
+                    "seats": 11
+                },
+                {
+                    "name": "Parti communiste",
+                    "res_100": 6.89,
+                    "res": 1342222,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 3,
+                    "seats": 7
+                },
+                {
+                    "name": "Chasse, pêche, nature et traditions",
+                    "res_100": 3.96,
+                    "res": 771061,
+                    "party": "CPNT",
+                    "pool": "Droite souverainiste/radicale",
+                    "level": 19,
+                    "seats": 0
+                },
+                {
+                    "name": "Europe Écologie - Les Verts",
+                    "res_100": 2.95,
+                    "res": 574806,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "Mouvement des citoyens",
+                    "res_100": 2.54,
+                    "res": 494986,
+                    "party": "MDC",
+                    "pool": "Centre-gauche",
+                    "level": 6,
+                    "seats": 0
+                },
+                {
+                    "name": "Lutte ouvrière",
+                    "res_100": 2.27,
+                    "res": 442723,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Génération écologie",
+                    "res_100": 2.01,
+                    "res": 392291,
+                    "party": "GECO",
+                    "pool": "Écologistes",
+                    "level": 8,
+                    "seats": 0
+                },
+                {
+                    "name": "Liste de soutien à Sarajevo",
+                    "res_100": 1.57,
+                    "res": 305633,
+                    "party": "DVG",
+                    "pool": "Centre-gauche",
+                    "level": 9,
+                    "seats": 0
+                },
+                {
+                    "name": "L'emploi d'abord",
+                    "res_100": 0.64,
+                    "res": 125340,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 16,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti de la loi naturelle",
+                    "res_100": 0.53,
+                    "res": 103261,
+                    "party": "PLN",
+                    "pool": "Divers",
+                    "level": 10,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti des travailleurs",
+                    "res_100": 0.53,
+                    "res": 84153,
+                    "party": "PT",
+                    "pool": "Extrême gauche",
+                    "level": 2,
+                    "seats": 0
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.39,
+                    "res": 76436,
+                    "party": "REG",
+                    "pool": "Divers",
+                    "level": 11,
+                    "seats": 0
+                },
+                {
+                    "name": "Fédéralistes",
+                    "res_100": 0.37,
+                    "res": 71814,
+                    "party": "DVC",
+                    "pool": "Divers",
+                    "level": 14,
+                    "seats": 0
+                },
+                {
+                    "name": "Politique de vie",
+                    "res_100": 0.29,
+                    "res": 56658,
+                    "party": "DVC",
+                    "pool": "Divers",
+                    "level": 13,
+                    "seats": 0
+                },
+                {
+                    "name": "Régionalistes d'outre-mer",
+                    "res_100": 0.19,
+                    "res": 37041,
+                    "party": "REG-OM",
+                    "pool": "Divers",
+                    "level": 12,
+                    "seats": 0
+                },
+                {
+                    "name": "Europe pour tous",
+                    "res_100": 0.0,
+                    "res": 290,
+                    "party": "DVD",
+                    "pool": "Droite",
+                    "level": 15,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 47.24,
+                "abs": 18434817 
+            }
+        },
+        {
+            "date": "1995-04-23",
+            "label": "Présidentiellles 1995 - 1er tour",
+            "type": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "Lionel Jospin",
+                    "res_100": 23.3,
+                    "res": 7097786 ,
+                    "party": "PS (+PRG+MDC)",
+                    "pool": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Jacques Chirac",
+                    "res_100": 20.84,
+                    "res": 6348375 ,
+                    "party": "RPR diss.",
+                    "pool": "Droite",
+                    "level": 7
+                },
+                {
+                    "name": "Edouard Balladur",
+                    "res_100": 18.58,
+                    "res": 5658796 ,
+                    "party": "RPR (+UDF)",
+                    "pool": "Droite",
+                    "level": 6
+                },
+                {
+                    "name": "Jean-Marie Le Pen",
+                    "res_100": 15,
+                    "res": 4570838,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+                    "level": 9
+                },
+                {
+                    "name": "Robert Hue",
+                    "res_100": 8.64,
+                    "res": 2632460,
+                    "party": "PCF",
+                    "pool": "Gauche radicale",
+                    "level": 2
+                },
+                {
+                    "name": "Arlette Laguiller",
+                    "res_100": 5.3,
+                    "res": 1615552,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Philippe de Villiers",
+                    "res_100": 4.74,
+                    "res": 1443186,
+                    "party": "MPF",
+                    "pool": "Droite souverainiste/radicale",
+                    "level": 8
+                },
+                {
+                    "name": "Dominique Voynet",
+                    "res_100": 3.32,
+                    "res": 1010681,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+                    "level": 4
+                },
+                {
+                    "name": "Jacques Cheminade",
+                    "res_100": 0.28,
+                    "res": 84959,
+                    "party": "FNS",
+                    "pool": "Divers",
+                    "level": 5
+                }
+            ],
+            "abs": {
+                "abs_100": 21.62,
+                "abs": 8647118
+            }
+        },
+        {
+            "date": "1995-05-07",
+            "label": "Présidentiellles 1995 - 2e tour",
+            "type": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "Lionel Jospin",
+                    "res_100": 47.02,
+                    "res": 14180644 ,
+                    "party": "PS",
+                    "pool": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Jacques Chirac",
+                    "res_100": 52.64,
+                    "res": 15763027,
+                    "party": "RPR",
+                    "pool": "Droite",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 20.34,
+                "abs": 8131125 
+            }
         }
     ]
  }
