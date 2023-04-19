@@ -137,7 +137,6 @@ function StackedAreaChart(data, {
     const X = d3.map(data, x);
     const Y = d3.map(data, y);
     const Z = d3.map(data, z);
-    // console.log("XYZ:", X, Y, Z)
 
     // Compute default x- and z-domains, and unique the z-domain.
     if (xDomain === undefined) xDomain = d3.extent(X);
@@ -201,6 +200,12 @@ function StackedAreaChart(data, {
         .attr("viewBox", [0, 0, width, height])
         .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
   
+    let electionDates = X.map(function (date) { return date.getTime() })
+        .filter(function (date, i, array) {
+            return array.indexOf(date) === i;
+        })
+        .map(function (time) { return new Date(time); });
+
     svg.append("g")
       .selectAll("path")
       .data(series)
@@ -230,5 +235,54 @@ function StackedAreaChart(data, {
             .attr("text-anchor", "start")
             .text(yLabel));
   
+    //TODO: group in SVG <g> rather than iterating in JS
+    electionDates.forEach((date) => {
+        const offset = date.getTimezoneOffset()
+        let newDate = new Date(date.getTime() - (offset*60*1000))
+        let elecDate = newDate.toISOString().split('T')[0]
+
+        const getElecType = (date) => Object.keys(CALENDAR).find(key => CALENDAR[key].includes(date));
+        let lineColor;
+        let elecType = getElecType(elecDate);
+        switch (elecType) {
+            case "pres":
+                lineColor = "red";
+                break;
+            case "legis":
+                lineColor = "blue";
+                break;
+            case "euro":
+                lineColor = "green";
+                break;
+            default:
+                lineColor = "black";
+        }
+        let i = X.map(Number).indexOf(+date)
+        var options = { year: "numeric", month: "long"};
+        svg.append("line")
+            .attr("x1", xScale(X[i]))
+            .attr("y1", 0)
+            .attr("x2", xScale(X[i]))
+            .attr("y2", height-20)
+            .style("stroke-width", 2)
+            .style("stroke", lineColor)
+            .style("fill", "none")
+            .style("pointer-events", "all")
+            .attr("class", "elecLine")
+            .on("mouseover", function() {
+                d3.select(this).style("stroke-width", 5);
+            })
+            .on("mouseout", function() {
+                d3.select(this).style("stroke-width", 2);       
+            })
+            .call(g => g.append("title")
+            .text(TYPE_LABELS[elecType] + " - " + date.toLocaleDateString("fr-FR", options)))
+        svg.append("text")
+                .attr("x", xScale(X[i]))
+                .attr("y", height)
+                .attr("fill", lineColor)
+                .attr("text-anchor", "middle")
+                .text(TYPE_LABELS[elecType][0])
+    })
     return Object.assign(svg.node(), {scales: {color}});
   }
