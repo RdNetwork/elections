@@ -284,5 +284,17 @@ function StackedAreaChart(data, {
                 .attr("text-anchor", "middle")
                 .text(TYPE_LABELS[elecType][0])
     })
+
+    if (offset === d3.stackOffsetExpand) {
+        svg.append("line")
+        .attr("x1", 35)
+        .attr("y1", (height/2)-5)
+        .attr("x2", width-10)
+        .attr("y2", (height/2)-5)
+        .style("stroke-width", 1)
+        .style("stroke-dasharray", ("3, 3"))
+        .style("stroke", "black")
+        .style("fill", "none");
+    }
     return Object.assign(svg.node(), {scales: {color}});
   }
