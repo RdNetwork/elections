@@ -1,6 +1,12 @@
 window.onload=()=>{    
     const cb = document.querySelector('#step');
+    const cbFam = document.querySelector('#family');
+    const cbQty = document.querySelector('#qty');
 	cb.addEventListener('change', plotChart);
+    cbFam.addEventListener('change', plotChart);
+    cbQty.addEventListener('change', plotChart);
+    const cbTypes = [document.querySelector('#filterPres'), document.querySelector('#filterLegis'), document.querySelector('#filterEuro')];
+    cbTypes.forEach((cbx) => cbx.addEventListener('change', plotChart));
     plotChart();
 }
 
@@ -10,8 +16,16 @@ function plotChart() {
     document.getElementById("chart").innerHTML = ''
     d3.json("data.json", {cache: "no-store"}).then(function(data) {
 
+        // Switch 1er/2nd tour
         const cb = document.querySelector('#step');
         let stepFilter = cb.checked ? 2 : 1;
+        // Switch courants/blocs
+        const cbFam = document.querySelector('#family');
+        // Switch %/abs
+        const cbQty = document.querySelector('#qty');
+        // Filtres élections
+        const cbTypes = [document.querySelector('#filterPres'), document.querySelector('#filterLegis'), document.querySelector('#filterEuro')];
+
         data.data.forEach((elec) => {
             PARTY_POOLS.filter(pool => !(elec.results.some(cand => cand.pool === pool))).forEach((missingPool) => {
                 elec.results.push({
@@ -40,8 +54,14 @@ function plotChart() {
                 return acc;
               }, []);
         });
-        console.log(data.data)
-        allRes = data.data.filter((elec) => elec.step == stepFilter).map(elec => {
+        
+        
+        let selectedTypes = []
+        cbTypes.forEach((cbx) => {console.log(cbx); if (cbx.checked) selectedTypes.push(cbx.value) });
+        allRes = data.data
+            .filter((elec) => elec.step == stepFilter || elec.step == 0)    // Switch tour
+            .filter((elec) => selectedTypes.includes(elec.type) || selectedTypes.length === 0)
+            .map(elec => {
             elec.mergedResults.forEach(res => {
                 res["date"] = elec.date
             });
@@ -50,11 +70,10 @@ function plotChart() {
         chart = StackedAreaChart(allRes, {
             x: res => d3.timeParse("%Y-%m-%d")(res.date),
             y: res => res.res,
-            z: res => res.pool,
-            yLabel: "↑ Résultat",
+            z: res => cbFam.checked ? res.family : res.pool,    // Switch courants/blocs
             zDomain:  PARTY_POOLS.reverse(),
-            width: 1500,
-            height: 800
+            offset: cbQty.checked ? d3.stackOffsetNone : d3.stackOffsetExpand,
+            yFormat: cbQty.checked ? null : "%"
         });
         document.getElementById("chart").append(chart);
     })   

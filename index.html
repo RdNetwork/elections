@@ -18,9 +18,23 @@
         </header>
 
         <section>
-            <div id="controls">
-                <input type="checkbox" id="step" name="step" value="step">
-                <label for="step"> Afficher les seconds tours plutôt que les premiers</label><br>
+            <div id="headerPanel">
+                <div id="controls">
+                    <input type="checkbox" id="step" name="step" value="step">
+                    <label for="step"> Afficher les seconds tours plutôt que les premiers</label><br>
+                    <input type="checkbox" id="family" name="family" value="family">
+                    <label for="family"> Afficher les blocs plutôt que les courants politiques</label><br>
+                    <input type="checkbox" id="qty" name="qty" value="qty">
+                    <label for="qty"> Afficher des quantités absolues plutôt que des pourcentages</label><br>
+                </div>
+                <div id="filters">
+                    <input type="checkbox" id="filterPres" name="filterPres" value="pres">
+                    <label for="filterPres"> Élections présidentielles (rouge)</label><br>
+                    <input type="checkbox" id="filterLegis" name="filterLegis" value="legis">
+                    <label for="fitlerLegis"> Élections législatives (bleu)</label><br>
+                    <input type="checkbox" id="filterEuro" name="filterEuro" value="euro">
+                    <label for="filterEuro"> Élections européennes (vert)</label><br>
+                </div>
             </div>
             <br/>
             <div id="chart"></div>
