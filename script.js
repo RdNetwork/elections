@@ -11,11 +11,11 @@ window.onload=()=>{
 }
 
 // Courant politiques
-const PARTY_POOLS = ["Extrême gauche", "Gauche radicale", "Gauche", "Écologistes", "Centre-gauche", "Divers", "Centre", "Centre-droit", "Droite", "Droite souverainiste/radicale", "Extrême droite"];
+const PARTY_POOLS = ["Extrême gauche", "Gauche radicale/communiste", "Gauche", "Écologistes", "Centre-gauche", "Divers", "Centre", "Centre-droit", "Droite", "Droite souverainiste/radicale", "Extrême droite"];
 // Lien entre courants et blocs
 const POOLS_FAMILY = {
     "Extrême gauche": "Gauche",
-    "Gauche radicale": "Gauche",
+    "Gauche radicale/communiste": "Gauche",
     "Gauche": "Gauche", 
     "Écologistes": "Gauche",
     "Centre-gauche": "Gauche",
@@ -89,17 +89,17 @@ function plotChart() {
         
         
         let selectedTypes = []
-        cbTypes.forEach((cbx) => {console.log(cbx); if (cbx.checked) selectedTypes.push(cbx.value) });
+        cbTypes.forEach((cbx) => {if (cbx.checked) selectedTypes.push(cbx.value) });
         allRes = data.data
             .filter((elec) => elec.step == stepFilter || elec.step == 0)    // Switch tour
             .filter((elec) => selectedTypes.includes(elec.type) || selectedTypes.length === 0)
             .map(elec => {
                 // On insére la date de l'élection dans chaque résultat (car les résultats sont "aplatis")
-            elec.mergedResults.forEach(res => {
-                res["date"] = elec.date
-            });
+                elec.mergedResults.forEach(res => {
+                    res["date"] = elec.date
+                });
                 // On trie aussi sur un axe gauche-droite
-            return elec.mergedResults.sort((a,b) => b.level - a.level);
+                return elec.mergedResults.sort((a,b) => b.level - a.level);
             })
             .flat();
 
@@ -205,7 +205,7 @@ function StackedAreaChart(data, {
         .x((point) =>  {
             let {i} = point
             if (i)
-                return xScale(X[i]) 
+                return xScale(X[i])
             else {
                 let newi = X.indexOf(point['data'][0])
                 return xScale(X[newi])
@@ -221,10 +221,10 @@ function StackedAreaChart(data, {
         .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
   
     let electionDates = X.map(function (date) { return date.getTime() })
-        .filter(function (date, i, array) {
-            return array.indexOf(date) === i;
-        })
-        .map(function (time) { return new Date(time); });
+    .filter(function (date, i, array) {
+        return array.indexOf(date) === i;
+    })
+    .map(function (time) { return new Date(time); });
 
 
     let labelSeries = series.map((pool) => {
@@ -242,14 +242,15 @@ function StackedAreaChart(data, {
         return newPool
     });
 
+    // Zones colorées
     svg.append("g")
-      .selectAll("path")
-      .data(series)
-      .join("path")
+        .selectAll("path")
+        .data(series)
+        .join("path")
         .attr("fill", ([{i}]) => color(Z[i]))
         .attr("d", area)
         .selectAll("path")
-      .append("title")
+        .append("title")
         .text(([{i}]) => Z[i])
 
     // Labels des zones
@@ -261,19 +262,21 @@ function StackedAreaChart(data, {
         .merge(labels)
         .text(([{i}]) => Z[i])
         .attr('transform', d3.areaLabel(area))
-  
+
+    // Axe horizontal annoté
     svg.append("g")
         .attr("transform", `translate(0,${height - marginBottom})`)
         .call(xAxis)
         .call(g => g.select(".domain").remove());
-  
+
+    // Axe vertical annoté
     svg.append("g")
         .attr("transform", `translate(${marginLeft},0)`)
         .call(yAxis)
         .call(g => g.select(".domain").remove())
         .call(g => g.selectAll(".tick line")
-          .filter(d => d === 0 || d === 1)
-          .clone()
+        .filter(d => d === 0 || d === 1)
+        .clone()
             .attr("x2", width - marginLeft - marginRight))
         .call(g => g.append("text")
             .attr("x", -marginLeft)
@@ -281,7 +284,8 @@ function StackedAreaChart(data, {
             .attr("fill", "currentColor")
             .attr("text-anchor", "start")
             .text(yLabel));
-  
+
+    // Lignes verticales de datation
     //TODO: group in SVG <g> rather than iterating in JS
     electionDates.forEach((date) => {
         const offset = date.getTimezoneOffset()
@@ -332,6 +336,7 @@ function StackedAreaChart(data, {
                 .text(TYPE_LABELS[elecType][0])
     })
 
+    // Ligne médiane
     if (offset === d3.stackOffsetExpand) {
         svg.append("line")
         .attr("x1", 35)

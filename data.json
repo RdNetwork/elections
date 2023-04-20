@@ -99,7 +99,7 @@
                     "res_100": 22.46,
                     "res": 5029808,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 1
                 },
                 {
@@ -167,7 +167,7 @@
                     "res_100": 21.37,
                     "res": 3998790,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "seats": 73,
                     "level": 1
                 },
@@ -233,7 +233,7 @@
                     "res_100": 20.03,
                     "res": 4435357,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 1
                 },
                 {
@@ -325,7 +325,7 @@
                     "res_100": 20.14,
                     "res": 2935775,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 1,
                     "seats": 34
                 },
@@ -416,7 +416,7 @@
                     "res_100": 21.27,
                     "res": 4808285,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2
                 },
                 {
@@ -496,7 +496,7 @@
                     "res_100": 21.41,
                     "res": 5085436,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2
                 },
                 {
@@ -604,7 +604,7 @@
                     "res_100": 20.61 ,
                     "res": 4402025 ,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 1,
                     "seats": 73
                 },
@@ -842,7 +842,7 @@
                     "res_100": 20.71,
                     "res": 5818245,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 3
                 },
                 {
@@ -914,7 +914,7 @@
                     "res_100": 1.03,
                     "res": 289011,
                     "party": "FA",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2
                 },
                 {
@@ -942,7 +942,7 @@
                     "res_100": 18.8,
                     "res": 4764704,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 1,
                     "seats": 86
                 },
@@ -1017,7 +1017,7 @@
                     "res_100": 20.52,
                     "res": 4153710,
                     "party": "PCF (+UP)",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 3,
                     "seats": 19
                 },
@@ -1080,7 +1080,7 @@
                     "res_100": 0,
                     "res": 332,
                     "party": "PSU",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2,
                     "seats": 0
                 },
@@ -1134,7 +1134,7 @@
                     "res_100": 15.35,
                     "res": 4456922,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 3
                 },
                 {
@@ -1182,7 +1182,7 @@
                     "res_100": 1.11,
                     "res": 321353,
                     "party": "PSU",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2
                 }
             ],
@@ -1248,7 +1248,7 @@
                     "res_100": 11.2,
                     "res": 2261712,
                     "party": "PCF (+UP)",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 3,
                     "seats": 10
                 },
@@ -1311,7 +1311,7 @@
                     "res_100": 0.72,
                     "res": 145302,
                     "party": "PSU (+CDU)",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 4,
                     "seats": 0
                 },
@@ -1395,7 +1395,7 @@
                     "res_100": 9.78,
                     "res": 2739925,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2,
                     "seats": 35
                 },
@@ -1538,7 +1538,7 @@
                     "res_100": 6.76,
                     "res": 2055995,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 4
                 },
                 {
@@ -1554,7 +1554,7 @@
                     "res_100": 2.1,
                     "res": 639084,
                     "party": "NGSEA (+PSU+LCR)",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 3
                 },
                 {
@@ -1627,7 +1627,7 @@
                     "res_100": 11.32,
                     "res": 2765761,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2,
                     "seats": 27
                 },
@@ -1747,7 +1747,7 @@
                     "res_100": 11.32,
                     "res": 2765761,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2,
                     "seats": 27
                 },
@@ -1903,7 +1903,7 @@
                     "res_100": 7.72,
                     "res": 1401171,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 3,
                     "seats": 7
                 },
@@ -1957,7 +1957,7 @@
                     "res_100": 0.41,
                     "res": 74327,
                     "party": "PCF diss.",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 4,
                     "seats": 0
                 },
@@ -2037,7 +2037,7 @@
                     "res_100": 9.25,
                     "res": 2342600,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2
                 },
                 {
@@ -2166,7 +2166,7 @@
                     "res_100": 4.69,
                     "res": 954697,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2,
                     "seats": 25
                 },
@@ -2295,7 +2295,7 @@
                     "res_100": 6.89,
                     "res": 1342222,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 3,
                     "seats": 7
                 },
@@ -2474,7 +2474,7 @@
                     "res_100": 8.64,
                     "res": 2632460,
                     "party": "PCF",
-                    "pool": "Gauche radicale",
+                    "pool": "Gauche radicale/communiste",
                     "level": 2
                 },
                 {
