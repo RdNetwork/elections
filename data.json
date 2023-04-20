@@ -3220,6 +3220,192 @@
                 "abs_100": 53.24,
                 "abs": 21366362 
             }
+        },
+        {
+            "date": "2002-04-21",
+            "label": "Présidentiellles 2002 - 1er tour",
+            "type": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "Jacques Chirac",
+                    "res_100": 19.88,
+                    "res": 5665855,
+                    "party": "RPR (+PR+UDF diss.)",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 12
+                },
+                {
+                    "name": "Jean-Marie Le Pen",
+                    "res_100": 16.86,
+                    "res": 4804713,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 15
+                },
+                {
+                    "name": "Lionel Jospin",
+                    "res_100": 16.18,
+                    "res": 4610113,
+                    "party": "PS",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "François Bayrou",
+                    "res_100": 6.84,
+                    "res": 1949170,
+                    "party": "UDF",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 10
+                },
+                {
+                    "name": "Arlette Laguiller",
+                    "res_100": 5.72,
+                    "res": 1630045,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Jean-Pierre Chevènement",
+                    "res_100": 5.33,
+                    "res": 1518528,
+                    "party": "MDC",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 8
+                },
+                {
+                    "name": "Noël Mamère",
+                    "res_100": 5.25,
+                    "res": 1495724,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+					"family": "Gauche",
+                    "level": 6
+                },
+                {
+                    "name": "Olivier Besancenot",
+                    "res_100": 4.25,
+                    "res": 1210562,
+                    "party": "NPA",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Jean Saint-Josse",
+                    "res_100": 4.23,
+                    "res": 1204689,
+                    "party": "CPNT",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 14
+                },
+                {
+                    "name": "Alain Madelin",
+                    "res_100": 3.91,
+                    "res": 1113484,
+                    "party": "DL",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 11
+                },
+                {
+                    "name": "Robert Hue",
+                    "res_100": 3.37,
+                    "res": 960480,
+                    "party": "PCF",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Bruno Megret",
+                    "res_100": 2.34,
+                    "res": 667026,
+                    "party": "MNR",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16
+                },
+                {
+                    "name": "Christiane Taubira",
+                    "res_100": 2.32,
+                    "res": 660447,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 7
+                },
+                {
+                    "name": "Corinne Lepage",
+                    "res_100": 1.88,
+                    "res": 535837,
+                    "party": "Cap21",
+                    "pool": "Écologistes",
+					"family": "Centre",
+                    "level": 9
+                },
+                {
+                    "name": "Christine Boutin",
+                    "res_100": 1.19,
+                    "res": 339112,
+                    "party": "FRS",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 13
+                },
+                {
+                    "name": "Daniel Gluckstein",
+                    "res_100": 0.47,
+                    "res": 132686,
+                    "party": "PT",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 3
+                }
+            ],
+            "abs": {
+                "abs_100": 28.4,
+                "abs": 11698956
+            }
+        },
+        {
+            "date": "2002-05-05",
+            "label": "Présidentiellles 2002 - 2e tour",
+            "type": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "Jacques Chirac",
+                    "res_100": 82.21,
+                    "res":  25537956,
+                    "party": "RPR (+PR+UDF diss.)",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 1
+                },
+                {
+                    "name": "Jean-Marie Le Pen",
+                    "res_100": 17.79,
+                    "res": 5525032,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 20.29,
+                "abs": 8358874 
+            }
         }
     ]
  }
