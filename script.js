@@ -10,22 +10,9 @@ window.onload=()=>{
     plotChart();
 }
 
-// Courant politiques
+// Courants politiques
 const PARTY_POOLS = ["Extrême gauche", "Gauche radicale/communiste", "Gauche", "Écologistes", "Centre-gauche", "Divers", "Centre", "Centre-droit", "Droite", "Droite souverainiste/radicale", "Extrême droite"];
-// Lien entre courants et blocs
-const POOLS_FAMILY = {
-    "Extrême gauche": "Gauche",
-    "Gauche radicale/communiste": "Gauche",
-    "Gauche": "Gauche", 
-    "Écologistes": "Gauche",
-    "Centre-gauche": "Gauche",
-    "Divers": "Centre",
-    "Centre": "Centre",
-    "Centre-droit": "Droite", 
-    "Droite": "Droite", 
-    "Droite souverainiste/radicale": "Droite",
-    "Extrême droite": "Droite"
-}
+
 // Calendrier par type d'élection (rempli pendant l'exécution)
 const CALENDAR = {
     "legis": [],
@@ -67,19 +54,18 @@ function plotChart() {
             // 2) On fusionne en additionnant les scores et en réunissant le reste
             // (On en profite aussi pour insérer le bloc politique global)
             elec.mergedResults = elec.results.reduce((acc, obj) => {
-                const existingObj = acc.find(item => item.pool === obj.pool);
+                const existingObj = acc.find(item => (cbFam.checked ? item.family === obj.family : item.pool === obj.pool));
                 if (existingObj) {
                   existingObj.name += '/' + obj.name;
                   existingObj.party += '/' + obj.party;
                   existingObj.res_100 += obj.res_100;
                   existingObj.res += obj.res;
                   existingObj.level.push(obj.level);
-                  existingObj.family = POOLS_FAMILY[existingObj.pool]
+                  existingObj.family = obj.family
                 } else {
                   acc.push({
                     ...obj,
-                    level: [obj.level],
-                    family: POOLS_FAMILY[obj.pool]
+                    level: [obj.level]
                   });
                 }
                 return acc;
