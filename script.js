@@ -35,7 +35,7 @@ const CALENDAR = {
 const TYPE_LABELS = {"legis": "Législatives", "pres" : "Présidentielles", "euro": "Européennes"}
 
 function plotChart() {
-    document.getElementById("chart").innerHTML = ''
+    document.querySelector("svg").innerHTML = ''
     d3.json("data.json", {cache: "no-store"}).then(function(data) {
 
         // Switch 1er/2nd tour
@@ -179,7 +179,12 @@ function StackedAreaChart(data, {
         .order(order)
         .offset(offset)
       (d3.rollup(I, ([i]) => i, i => X[i], i => Z[i]))
-      .map(s => s.map(d => Object.assign(d, {i: d.data[1].get(s.key)})));
+      .map(s => {
+        newS = s.map(d => Object.assign(d, {i: d.data[1].get(s.key)}))
+        newS.key = s.key
+        newS.index = s.index
+        return newS
+        });
 
     // Compute the default y-domain. Note: diverging stacks can be negative.
     if (yDomain === undefined) yDomain = d3.extent(series.flat(2));
@@ -209,7 +214,7 @@ function StackedAreaChart(data, {
         .y0(([y1]) => yScale(y1))
         .y1(([, y2]) =>  yScale(y2))
   
-    const svg = d3.create("svg")
+    const svg = d3.select("svg")
         .attr("width", width)
         .attr("height", height)
         .attr("viewBox", [0, 0, width, height])
@@ -221,14 +226,41 @@ function StackedAreaChart(data, {
         })
         .map(function (time) { return new Date(time); });
 
+
+    let labelSeries = series.map((pool) => {
+        newPool = pool.map((elec) => {
+            let newElec = elec.map((d) => d)
+            newElec.data = {}
+            zDomain.forEach((z) => {
+                newElec.data[z] = Y[elec.data[1].get(z)]
+            })
+            newElec.i = elec.i
+            return newElec
+        })
+        newPool.key = pool.key
+        newPool.index = pool.index
+        return newPool
+    });
+
     svg.append("g")
       .selectAll("path")
       .data(series)
       .join("path")
         .attr("fill", ([{i}]) => color(Z[i]))
         .attr("d", area)
+        .selectAll("path")
       .append("title")
-        .text(([{i}]) => Z[i]);
+        .text(([{i}]) => Z[i])
+
+    // Labels des zones
+    let labels = svg.select("g").selectAll('text#labels').data(labelSeries)
+    labels.enter()
+        .append('text')
+        .attr('id', 'labels')
+        .attr('class', 'area-label')
+        .merge(labels)
+        .text(([{i}]) => Z[i])
+        .attr('transform', d3.areaLabel(area))
   
     svg.append("g")
         .attr("transform", `translate(0,${height - marginBottom})`)
@@ -311,5 +343,6 @@ function StackedAreaChart(data, {
         .style("stroke", "black")
         .style("fill", "none");
     }
+
     return Object.assign(svg.node(), {scales: {color}});
   }
