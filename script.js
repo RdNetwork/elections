@@ -235,7 +235,6 @@ function StackedAreaChart(data, {
         .join("path")
         .attr("fill", ([{i}]) => color(Z[i]))
         .attr("d", area)
-        .selectAll("path")
         .append("title")
         .text(([{i}]) => Z[i])
 
