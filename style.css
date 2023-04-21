@@ -19,15 +19,20 @@ body {
     margin-left: -2em;
     margin-bottom: 0;
 }
-
 section {
     margin-bottom: 1em;
 }
-
+.hoverText {
+    font-weight: bold;
+}
 .elecLine:hover {
     stroke-width: 5px;
 }
 .area-label {
-    fill-opacity: 0.7;
+    fill-opacity: 0.5;
     fill: white;
 }
+/* .area:hover {
+    stroke: #3d3d3d;
+    stroke-width: 3px;
+} */

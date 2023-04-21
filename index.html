@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Expérimentations dataviz politique</title>
+        <title>Tendances électorales en France</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -18,7 +18,7 @@
         <section>
             <div id="headerPanel">
                 <div id="controls">
-                    <h2>Affichage</h2>
+                    <h2>Variables</h2>
                     <ul>
                         <li><input type="checkbox" id="step" name="step" value="step"><label for="step"> Afficher les seconds tours plutôt que les premiers</label></li>
                         <li><input type="checkbox" id="family" name="family" value="family"><label for="family"> Afficher les blocs plutôt que les courants politiques</label></li>
@@ -31,6 +31,13 @@
                         <li><input type="checkbox" id="filterPres" name="filterPres" value="pres"><label for="filterPres"> Élections présidentielles (rouge)</label></li>
                         <li><input type="checkbox" id="filterLegis" name="filterLegis" value="legis"><label for="fitlerLegis"> Élections législatives (bleu)</label></li>
                         <li><input type="checkbox" id="filterEuro" name="filterEuro" value="euro"><label for="filterEuro"> Élections européennes (vert)</label></li>
+                    </ul>
+                </div>
+                <div id="display">
+                    <h2>Affichage</h2>
+                    <ul>
+                        <li><input type="checkbox" id="displayLabel" name="displayLabel" value="displayLabel"><label for="displayLabel"> Afficher les noms des courants/blocs</label></li>
+                        <li><input type="checkbox" id="displayTicks" name="displayTicks" value="displayTicks"><label for="displayTicks"> Afficher les résultats au survol de chaque élection</label></li>
                     </ul>
                 </div>
             </div>

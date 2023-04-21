@@ -1,12 +1,5 @@
 window.onload=()=>{    
-    const cb = document.querySelector('#step');
-    const cbFam = document.querySelector('#family');
-    const cbQty = document.querySelector('#qty');
-	cb.addEventListener('change', plotChart);
-    cbFam.addEventListener('change', plotChart);
-    cbQty.addEventListener('change', plotChart);
-    const cbTypes = [document.querySelector('#filterPres'), document.querySelector('#filterLegis'), document.querySelector('#filterEuro')];
-    cbTypes.forEach((cbx) => cbx.addEventListener('change', plotChart));
+    document.querySelectorAll('#headerPanel input[type=checkbox]').forEach((cbx) => cbx.addEventListener('change', plotChart));
     plotChart();
 }
 
@@ -20,6 +13,9 @@ const CALENDAR = {
     "euro": [],
 }
 const TYPE_LABELS = {"legis": "Législatives", "pres" : "Présidentielles", "euro": "Européennes"}
+
+width = 1800;
+height = 700;
 
 function plotChart() {
     document.querySelector("svg").innerHTML = ''
@@ -95,8 +91,8 @@ function plotChart() {
             y: res => res.res,
             z: res => cbFam.checked ? res.family : res.pool,    // Switch courants/blocs
             zDomain:  PARTY_POOLS.reverse(),
-            width: 1800,
-            height: 700,
+            width: width,
+            height: height,
             offset: cbQty.checked ? d3.stackOffsetNone : d3.stackOffsetExpand,
             yFormat: cbQty.checked ? null : "%"
         });
@@ -233,20 +229,28 @@ function StackedAreaChart(data, {
         .selectAll("path")
         .data(series)
         .join("path")
+        .attr("class","area")
         .attr("fill", ([{i}]) => color(Z[i]))
         .attr("d", area)
         .append("title")
         .text(([{i}]) => Z[i])
 
+    // Paramètres d'affichage
+    const cbLabels = document.querySelector('#displayLabel')
+    const cbTicks = document.querySelector('#displayTicks')
+
     // Labels des zones
-    let labels = svg.select("g").selectAll('text#labels').data(labelSeries)
-    labels.enter()
-        .append('text')
-        .attr('id', 'labels')
-        .attr('class', 'area-label')
-        .merge(labels)
-        .text(([{i}]) => Z[i])
-        .attr('transform', d3.areaLabel(area))
+
+    if (cbLabels.checked) {
+        let labels = svg.select("g").selectAll('text#labels').data(labelSeries)
+        labels.enter()
+            .append('text')
+            .attr('id', 'labels')
+            .attr('class', 'area-label')
+            .merge(labels)
+            .text(([{i}]) => Z[i])
+            .attr('transform', d3.areaLabel(area))
+    }
 
     // Axe horizontal annoté
     svg.append("g")
@@ -328,11 +332,105 @@ function StackedAreaChart(data, {
         .attr("y1", (height/2)-5)
         .attr("x2", width-10)
         .attr("y2", (height/2)-5)
-        .style("stroke-width", 1)
+        .style("stroke-width", 2)
         .style("stroke-dasharray", ("3, 3"))
         .style("stroke", "black")
         .style("fill", "none");
     }
 
+
+    // Interactivité
+  
+    if (cbTicks.checked) {
+        // svg.append('rect')
+        //   .attr('fill', 'transparent')
+        //   .attr('x', 0)
+        //   .attr('y', 0)
+        //   .attr('width', width)
+        //   .attr('height', height)
+        // ;
+        svg.selectAll('.elecLine').on('mouseover', hoverTicks);
+        svg.selectAll('.elecLine').on('mouseout', () => {svg.selectAll(".hoverPoint").remove(); svg.selectAll(".hoverText").remove();})
+
+        function hoverTicks(event) {
+            event.preventDefault();
+            const mouse = d3.pointer(event);
+            const [
+            xCoord,
+            yCoord,
+            ] = mouse;
+        
+            const mouseDateSnap = xScale.invert(xCoord);
+            if (xScale(mouseDateSnap) < marginLeft ||
+            xScale(mouseDateSnap) > width - marginRight) {
+            return;
+            }
+            
+            const bisectDate = d3.bisector(d => d.date).right;
+            const xIndex = bisectDate(series, mouseDateSnap, 1);
+            let dateInds = X.reduce((acc, d, ind) => {
+                if (d.getMonth() === mouseDateSnap.getMonth() && d.getFullYear() === mouseDateSnap.getFullYear())
+                    acc.push(ind);
+                return acc;
+            }, []); 
+            const isLessThanHalf = xIndex > series.length / 2;
+
+            dateInds.forEach((i) => {
+                svg.append('circle').classed('hoverPoint', true).attr("id", "pt"+i);
+                svg.append("text").classed('hoverText', true).attr("id", "txt"+i);
+            });
+
+            svg.selectAll('.hoverPoint').each((p,i,d) => {
+                let id = d3.select(d[i]).attr("id").slice(2)
+                let pool = series.find((p) => p.key === Z[id]);
+                let point = pool.find((p) => p.i === parseInt(id));
+
+                if ((point[1]-point[0]) > 0) {
+                    d3.select(d[i])
+                    .attr('cx', xScale(mouseDateSnap))
+                    .attr('cy', yScale((point[0]+point[1])/2))
+                    .attr('r', '7')
+                    // .style("stroke", "black")
+                    // .style("stroke-width", 1)
+                    .attr('fill', d3.color(color(Z[id])).darker());
+                }
+
+            })
+
+            let formerSmall = false; revert = false;
+            svg.selectAll('.hoverText').each((p,i,d) => {
+                let id = d3.select(d[i]).attr("id").slice(3)
+                let pool = series.find((p) => p.key === Z[id]);
+                let point = pool.find((p) => p.i === parseInt(id));
+
+                if ((point[1]-point[0]) > 0) { 
+                    if ((point[1]-point[0]) < 0.02) {
+                        if (formerSmall) {
+                            revert = !revert;
+                        } else {
+                            revert = false;
+                        }
+                    } 
+                    formerSmall = ((point[1]-point[0]) < 0.01)
+                    
+                    const hoverTextX = (isLessThanHalf || revert) ? '-0.75em' : '0.75em';
+                    const hoverTextAnchor = (isLessThanHalf || revert) ? 'end' : 'start';
+
+                    d3.select(d[i])
+                    .attr('x', xScale(mouseDateSnap))
+                    .attr('y', yScale((point[0]+point[1])/2))
+                    .attr('dx', hoverTextX)
+                    .attr('dy', '0')
+                    .style('text-anchor', hoverTextAnchor)
+                    .style('fill',  d3.color(color(Z[id])).darker(1))
+                    .text(Z[id] + " : " + d3.format('.1%')(point[1]-point[0]));
+                }
+            });
+
+        };
+    }
+
+
+
     return Object.assign(svg.node(), {scales: {color}});
-  }
+}
