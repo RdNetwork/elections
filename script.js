@@ -1,5 +1,9 @@
 window.onload=()=>{    
     document.querySelectorAll('#headerPanel input[type=checkbox]').forEach((cbx) => cbx.addEventListener('change', plotChart));
+    document.querySelector('#displayLines').addEventListener('change', () => {
+        document.getElementById("displayTicks").disabled = !document.getElementById("displayLines").checked;
+    })
+
     plotChart();
 }
 
@@ -74,7 +78,7 @@ function plotChart() {
         cbTypes.forEach((cbx) => {if (cbx.checked) selectedTypes.push(cbx.value) });
         allRes = data.data
             .filter((elec) => elec.step == stepFilter || elec.step == 0)    // Switch tour
-            .filter((elec) => selectedTypes.includes(elec.type) || selectedTypes.length === 0)
+            .filter((elec) => selectedTypes.includes(elec.type))
             .map(elec => {
                 // On insére la date de l'élection dans chaque résultat (car les résultats sont "aplatis")
                 elec.mergedResults.forEach(res => {
@@ -232,15 +236,27 @@ function StackedAreaChart(data, {
         .attr("class","area")
         .attr("fill", ([{i}]) => color(Z[i]))
         .attr("d", area)
+        .on("mouseover", function(d) {
+            d3.select(this)
+            .style("fill", ([{i}]) => d3.color(color(Z[i])).darker(0.35))
+            .style("stroke", ([{i}]) => d3.color(color(Z[i])))
+            .style("stroke-width", 6);
+          })                  
+        .on("mouseout", function(d) {
+            d3.select(this)
+            .style("fill", ([{i}]) => d3.color(color(Z[i])))
+            .style("stroke", "transparent")
+            .style("stroke-width", 0);
+        })
         .append("title")
         .text(([{i}]) => Z[i])
 
     // Paramètres d'affichage
     const cbLabels = document.querySelector('#displayLabel')
     const cbTicks = document.querySelector('#displayTicks')
+    const cbLines = document.querySelector('#displayLines')
 
     // Labels des zones
-
     if (cbLabels.checked) {
         let labels = svg.select("g").selectAll('text#labels').data(labelSeries)
         labels.enter()
@@ -276,54 +292,56 @@ function StackedAreaChart(data, {
 
     // Lignes verticales de datation
     //TODO: group in SVG <g> rather than iterating in JS
-    electionDates.forEach((date) => {
-        const offset = date.getTimezoneOffset()
-        let newDate = new Date(date.getTime() - (offset*60*1000))
-        let elecDate = newDate.toISOString().split('T')[0]
-
-        const getElecType = (date) => Object.keys(CALENDAR).find(key => CALENDAR[key].includes(date));
-        let lineColor;
-        let elecType = getElecType(elecDate);
-        switch (elecType) {
-            case "pres":
-                lineColor = "red";
-                break;
-            case "legis":
-                lineColor = "blue";
-                break;
-            case "euro":
-                lineColor = "green";
-                break;
-            default:
-                lineColor = "black";
-        }
-        let i = X.map(Number).indexOf(+date)
-        var options = { year: "numeric", month: "long"};
-        svg.append("line")
-            .attr("x1", xScale(X[i]))
-            .attr("y1", 0)
-            .attr("x2", xScale(X[i]))
-            .attr("y2", height-20)
-            .style("stroke-width", 2)
-            .style("stroke", lineColor)
-            .style("fill", "none")
-            .style("pointer-events", "all")
-            .attr("class", "elecLine")
-            .on("mouseover", function() {
-                d3.select(this).style("stroke-width", 5);
-            })
-            .on("mouseout", function() {
-                d3.select(this).style("stroke-width", 2);       
-            })
-            .call(g => g.append("title")
-            .text(TYPE_LABELS[elecType] + " - " + date.toLocaleDateString("fr-FR", options)))
-        svg.append("text")
-                .attr("x", xScale(X[i]))
-                .attr("y", height)
-                .attr("fill", lineColor)
-                .attr("text-anchor", "middle")
-                .text(TYPE_LABELS[elecType][0])
-    })
+    if (cbLines.checked) {
+        electionDates.forEach((date) => {
+            const offset = date.getTimezoneOffset()
+            let newDate = new Date(date.getTime() - (offset*60*1000))
+            let elecDate = newDate.toISOString().split('T')[0]
+    
+            const getElecType = (date) => Object.keys(CALENDAR).find(key => CALENDAR[key].includes(date));
+            let lineColor;
+            let elecType = getElecType(elecDate);
+            switch (elecType) {
+                case "pres":
+                    lineColor = "red";
+                    break;
+                case "legis":
+                    lineColor = "blue";
+                    break;
+                case "euro":
+                    lineColor = "green";
+                    break;
+                default:
+                    lineColor = "black";
+            }
+            let i = X.map(Number).indexOf(+date)
+            var options = { year: "numeric", month: "long"};
+            svg.append("line")
+                .attr("x1", xScale(X[i]))
+                .attr("y1", 0)
+                .attr("x2", xScale(X[i]))
+                .attr("y2", height-20)
+                .style("stroke-width", 2)
+                .style("stroke", lineColor)
+                .style("fill", "none")
+                .style("pointer-events", "all")
+                .attr("class", "elecLine")
+                .on("mouseover", function() {
+                    d3.select(this).style("stroke-width", 5);
+                })
+                .on("mouseout", function() {
+                    d3.select(this).style("stroke-width", 2);       
+                })
+                .call(g => g.append("title")
+                .text(TYPE_LABELS[elecType] + " - " + date.toLocaleDateString("fr-FR", options)))
+            svg.append("text")
+                    .attr("x", xScale(X[i]))
+                    .attr("y", height)
+                    .attr("fill", lineColor)
+                    .attr("text-anchor", "middle")
+                    .text(TYPE_LABELS[elecType][0])
+        });
+    }
 
     // Ligne médiane
     if (offset === d3.stackOffsetExpand) {

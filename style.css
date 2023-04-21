@@ -1,8 +1,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 1em 2em;
+    margin: 10px 3em;
 }
-
+h1 {
+    margin-top: 0;
+}
 #headerPanel {
     display: flex;
     gap: 2em;
@@ -31,8 +33,10 @@ section {
 .area-label {
     fill-opacity: 0.5;
     fill: white;
+    pointer-events: none;
 }
-/* .area:hover {
+.area:hover {
     stroke: #3d3d3d;
-    stroke-width: 3px;
-} */
+    stroke-width: 1px;
+    /* fill: rgba(0, 0, 0, .5) */
+}
