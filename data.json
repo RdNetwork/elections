@@ -4559,6 +4559,577 @@
                 "abs_100": 59.37,
                 "abs": 26290662 
             }
+        },
+        {
+            "date": "2012-04-22",
+            "label": "Présidentiellles 2012 - 1er tour",
+            "type": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "Nathalie Arthaud",
+                    "res_100": 0.56,
+                    "res":  202548,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Philippe Poutou",
+                    "res_100": 1.15,
+                    "res":  411160,
+                    "party": "NPA",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Jean-Luc Mélenchon",
+                    "res_100": 11.1,
+                    "res":  3984822,
+                    "party": "PG (+PCF+EXG)",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "François Hollande",
+                    "res_100": 28.63,
+                    "res":  10272705,
+                    "party": "PS (+PRG+MRC+Cap21+GE)",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Eva Joly",
+                    "res_100": 2.31,
+                    "res": 828345,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+					"family": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Jacques Cheminade",
+                    "res_100": 0.25,
+                    "res": 89545,
+                    "party": "S&P",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 6
+                },
+                {
+                    "name": "François Bayrou",
+                    "res_100": 9.13,
+                    "res": 3275122,
+                    "party": "MoDem",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 7
+                },
+                {
+                    "name": "Nicolas Sarkozy",
+                    "res_100": 27.18,
+                    "res": 9753629,
+                    "party": "UMP (+PR+NC+CPNT+PCD)",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 8
+                },
+                {
+                    "name": "Nicolas Dupont-Aignan",
+                    "res_100": 2.79,
+                    "res": 643907,
+                    "party": "DLR",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 9
+                },
+                {
+                    "name": "Marine Le Pen",
+                    "res_100": 17.9,
+                    "res": 6421426,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 10
+                }
+            ],
+            "abs": {
+                "abs_100": 20.52,
+                "abs": 9444143
+            }
+        },
+        {
+            "date": "2012-05-06",
+            "label": "Présidentiellles 2012 - 2e tour",
+            "type": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "François Hollande",
+                    "res_100": 51.64,
+                    "res":  18000668,
+                    "party": "PS (+PRG+MRC+Cap21+GE)",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Nicolas Sarkozy",
+                    "res_100": 48.36,
+                    "res":  16860685,
+                    "party": "UMP (+PR+NC+CPNT+PCD)",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 19.65,
+                "abs": 9049998 
+            }
+        },
+        {
+            "date": "2012-06-10",
+            "label": "Législatives 2012 - 1er tour",
+            "step": 1,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0.98,
+                    "res": 253386,
+                    "party": "LO+LCR+EXG",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Front de gauche",
+                    "res_100": 6.91,
+                    "res": 1793192,
+                    "party": "PCF+PG",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 3.4,
+                    "res": 881555,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 29.35,
+                    "res": 7618326,
+                    "party": "PS",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Europe Écologie - Les Verts",
+                    "res_100": 5.46,
+                    "res": 1418264,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+					"family": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Parti radical de gauche",
+                    "res_100": 1.65,
+                    "res": 428898,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 6
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.56,
+                    "res": 145809,
+                    "party": "REG",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 7
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 0.96,
+                    "res": 249068,
+                    "party": "ECO",
+                    "pool": "Écologistes",
+					"family": "Centre",
+                    "level": 8
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 0.52,
+                    "res": 133752,
+                    "party": "DVC",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 9
+                },
+                {
+                    "name": "Mouvement démocrate",
+                    "res_100": 1.77,
+                    "res": 458098,
+                    "party": "MoDem",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 10
+                },
+                {
+                    "name": "Parti radical",
+                    "res_100": 1.24,
+                    "res": 321124,
+                    "party": "PR",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 11
+                },
+                {
+                    "name": "Alliance centriste",
+                    "res_100": 0.6,
+                    "res": 156026,
+                    "party": "AC",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 12
+                },
+                {
+                    "name": "Nouveau Centre",
+                    "res_100": 2.2,
+                    "res": 569897,
+                    "party": "NC",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 13
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 3.51,
+                    "res": 910034,
+                    "party": "DVD",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 14
+                },
+                {
+                    "name": "Union pour un mouvement populaire",
+                    "res_100": 27.12,
+                    "res": 7037268,
+                    "party": "UMP",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 15
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.19,
+                    "res": 49499,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 17
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 13.6,
+                    "res": 3528663,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16
+                }
+            ],
+            "abs": {
+                "abs_100": 42.78,
+                "abs": 19712978 
+            }
+        },
+        {
+            "date": "2012-06-17",
+            "label": "Législatives 2012 - 2e tour",
+            "step": 2,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Front de gauche",
+                    "res_100": 1.08,
+                    "res": 249498,
+                    "party": "PCF+PG",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 1,
+                    "seats": 10
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 3.08,
+                    "res": 709395,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 2,
+                    "seats": 22
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 40.91,
+                    "res": 9420889,
+                    "party": "PS",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 3,
+                    "seats": 280
+                },
+                {
+                    "name": "Europe Écologie - Les Verts",
+                    "res_100": 3.6,
+                    "res": 829036,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+					"family": "Gauche",
+                    "level": 4,
+                    "seats": 17
+                },
+                {
+                    "name": "Parti radical de gauche",
+                    "res_100": 2.34,
+                    "res": 538331,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 5,
+                    "seats": 12
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.59,
+                    "res": 135312,
+                    "party": "REG",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 6,
+                    "seats": 1
+                },
+                {
+                    "name": "Mouvement démocrate",
+                    "res_100": 0.49,
+                    "res": 113196,
+                    "party": "MoDem",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 7,
+                    "seats": 2
+                },
+                {
+                    "name": "Parti radical",
+                    "res_100": 1.35,
+                    "res": 311199,
+                    "party": "PR",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 8,
+                    "seats": 6
+                },
+                {
+                    "name": "Alliance centriste",
+                    "res_100": 0.53,
+                    "res": 123132,
+                    "party": "AC",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 9,
+                    "seats": 2
+                },
+                {
+                    "name": "Nouveau Centre",
+                    "res_100": 2.47,
+                    "res": 568319,
+                    "party": "NC",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 10,
+                    "seats": 12
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 1.82,
+                    "res": 417940,
+                    "party": "DVD",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 11,
+                    "seats": 15
+                },
+                {
+                    "name": "Union pour un mouvement populaire",
+                    "res_100": 37.95,
+                    "res": 8740628,
+                    "party": "UMP",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 12,
+                    "seats": 194
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.13,
+                    "res": 29738,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 14,
+                    "seats": 1
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 3.66,
+                    "res": 842695,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 13,
+                    "seats": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 44.6,
+                "abs": 19281162
+            }
+        },
+        {
+            "date": "2014-05-25",
+            "label": "Européennes 2014 - Tour unique",
+            "step": 0,
+            "type": "euro",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 1.6,
+                    "res": 302436,
+                    "party": "EXG+LO+LCR",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Front de gauche",
+                    "res_100": 6.33,
+                    "res": 1200713,
+                    "party": "PG+PCF+GU",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 2,
+                    "seats": 3
+                },
+                {
+                    "name": "Union de la gauche (majorité présidentielle)",
+                    "res_100": 13.98,
+                    "res": 2650357,
+                    "party": "PS+PRG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 3,
+                    "seats": 13
+                },
+                {
+                    "name": "Europe Écologie - Les Verts",
+                    "res_100": 8.95,
+                    "res": 1696442,
+                    "party": "EELV",
+                    "pool": "Écologistes",
+					"family": "Gauche",
+                    "level": 4,
+                    "seats": 6
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 3.18,
+                    "res": 602294,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 4,
+                    "seats": 1
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 4.37,
+                    "res": 827526,
+                    "party": "DVC",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "L'Alternative / Union du centre",
+                    "res_100": 9.94,
+                    "res": 1884565,
+                    "party": "MoDem+UDI",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 6,
+                    "seats": 7
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 5.98,
+                    "res": 1133811,
+                    "party": "DVD",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 7,
+                    "seats": 0
+                },
+                {
+                    "name": "Union pour un mouvement populaire",
+                    "res_100": 20.81,
+                    "res": 3943819,
+                    "party": "UMP",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 8,
+                    "seats": 20
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 24.86,
+                    "res": 4712461,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 9,
+                    "seats": 24
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.01,
+                    "res": 1337,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 10,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 57.57,
+                "abs": 796819
+            }
         }
     ]
  }
