@@ -258,6 +258,21 @@ function StackedAreaChart(data, {
 
     // Labels des zones
     if (cbLabels.checked) {
+        let labelSeries = series.map((pool) => {
+            newPool = pool.map((elec) => {
+                let newElec = elec.map((d) => d)
+                newElec.data = {}
+                zDomain.forEach((z) => {
+                    newElec.data[z] = Y[elec.data[1].get(z)]
+                })
+                newElec.i = elec.i
+                return newElec
+            })
+            newPool.key = pool.key
+            newPool.index = pool.index
+            return newPool
+        });
+
         let labels = svg.select("g").selectAll('text#labels').data(labelSeries)
         labels.enter()
             .append('text')
@@ -358,7 +373,6 @@ function StackedAreaChart(data, {
 
 
     // Interactivité
-  
     if (cbTicks.checked) {
         // svg.append('rect')
         //   .attr('fill', 'transparent')
@@ -410,7 +424,7 @@ function StackedAreaChart(data, {
                     .attr('r', '7')
                     // .style("stroke", "black")
                     // .style("stroke-width", 1)
-                    .attr('fill', d3.color(color(Z[id])).darker());
+                    .attr('fill', d3.color(color(Z[id])).brighter());
                 }
 
             })
@@ -440,7 +454,7 @@ function StackedAreaChart(data, {
                     .attr('dx', hoverTextX)
                     .attr('dy', '0')
                     .style('text-anchor', hoverTextAnchor)
-                    .style('fill',  d3.color(color(Z[id])).darker(1))
+                    .style('fill',  "lightgrey")
                     .text(Z[id] + " : " + d3.format('.1%')(point[1]-point[0]));
                 }
             });
