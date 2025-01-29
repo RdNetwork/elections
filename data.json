@@ -22,7 +22,8 @@
                     "party": "CIR (SFIO+PCF+PR+PSU)",
                     "pool": "Gauche",
 					"family": "Gauche",
-                    "level": 1
+                    "level": 1,
+                    "coal": ["Gauche radicale/communiste"]
                 },
                 {
                     "name": "Jean Lecanuet",
@@ -88,7 +89,8 @@
                     "party": "CIR (SFIO+PCF+PR+PSU)",
                     "pool": "Gauche",
 					"family": "Gauche",
-                    "level": 1
+                    "level": 1,
+                    "coal": ["Gauche radicale/communiste"]
                 }
             ],
             "abs": {
@@ -103,7 +105,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 22.46,
                     "res": 5029808,
                     "party": "PCF",
@@ -178,7 +180,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 21.37,
                     "res": 3998790,
                     "party": "PCF",
@@ -250,7 +252,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 20.03,
                     "res": 4435357,
                     "party": "PCF",
@@ -292,7 +294,8 @@
                     "party": "FNRI (+DVD)",
                     "pool": "Centre-droit",
 					"family": "Droite",
-                    "level": 8
+                    "level": 8,
+                    "coal": ["Droite"]
                 },
                 {
                     "name": "Union des démocrates pour la République",
@@ -352,7 +355,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 20.14,
                     "res": 2935775,
                     "party": "PCF",
@@ -399,7 +402,8 @@
                     "pool": "Centre-droit",
 					"family": "Droite",
                     "level": 8,
-                    "seats": 73
+                    "seats": 73,
+                    "coal": ["Droite"]
                 },
                 {
                     "name": "Union des démocrates pour la République",
@@ -449,7 +453,8 @@
                     "party": "CD (+CR+CNIP+PDM)",
                     "pool": "Centre",
 					"family": "Centre",
-                    "level": 6
+                    "level": 6,
+                    "coal": ["Centre-droit"]
                 },
                 {
                     "name": "Jacques Duclos",
@@ -523,7 +528,8 @@
                     "party": "CD (+CR+CNIP+PDM)",
                     "pool": "Centre",
 					"family": "Centre",
-                    "level": 1
+                    "level": 1,
+                    "coal": ["Centre-droit"]
                 }
             ],
             "abs": {
@@ -538,7 +544,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 21.41,
                     "res": 5085436,
                     "party": "PCF",
@@ -657,7 +663,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 20.61 ,
                     "res": 4402025 ,
                     "party": "PCF",
@@ -775,6 +781,7 @@
                     "party": "PS (+PCF+PRG)",
                     "pool": "Gauche",
 					"family": "Gauche",
+                    "coal": ["Gauche radicale/communiste"],
                     "level": 3
                 },
                 {
@@ -817,7 +824,7 @@
                     "res_100": 1.32,
                     "res": 337800,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 4
                 },
@@ -893,7 +900,8 @@
                     "party": "PS (+PCF+PRG)",
                     "pool": "Gauche",
 					"family": "Gauche",
-                    "level": 1
+                    "level": 1,
+                    "coal": ["Gauche radicale/communiste"]
                 },
                 {
                     "name": "Valéry Giscard d'Estaing",
@@ -917,7 +925,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 20.71,
                     "res": 5818245,
                     "party": "PCF",
@@ -941,7 +949,8 @@
                     "party": "FRP+UGP+MDD",
                     "pool": "Centre-gauche",
 					"family": "Gauche",
-                    "level": 7
+                    "level": 7,
+                    "coal": ["Centre"]
                 },
                 {
                     "name": "Divers gauche",
@@ -992,7 +1001,7 @@
                     "res_100": 2.13,
                     "res": 597963,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 6
                 },
@@ -1027,7 +1036,7 @@
             "type": "legis",
             "results": [
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 18.8,
                     "res": 4764704,
                     "party": "PCF",
@@ -1109,7 +1118,7 @@
                     "seats": 22
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 20.52,
                     "res": 4153710,
                     "party": "PCF (+UP)",
@@ -1129,11 +1138,11 @@
                     "seats": 15
                 },
                 {
-                    "name": "Europe Écologie - Les Verts",
+                    "name": "Europe écologie - Les Verts",
                     "res_100": 4.39,
                     "res": 888134,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 5,
                     "seats": 0
@@ -1258,7 +1267,7 @@
                     "res_100": 3.88,
                     "res": 1126254,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Centre",
 					"family": "Centre",
                     "level": 6
                 },
@@ -1348,7 +1357,8 @@
                     "pool": "Centre-droit",
 					"family": "Droite",
                     "level": 12,
-                    "seats": 41
+                    "seats": 41,
+                    "coal": ["Droite"]
                 },
                 {
                     "name": "Parti socialiste",
@@ -1361,7 +1371,7 @@
                     "seats": 20
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 11.2,
                     "res": 2261712,
                     "party": "PCF (+UP)",
@@ -1384,8 +1394,8 @@
                     "name": "Europe Écologie - Les Verts",
                     "res_100": 3.36,
                     "res": 678079,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 6,
                     "seats": 0
@@ -1398,7 +1408,8 @@
                     "pool": "Centre-gauche",
 					"family": "Gauche",
                     "level": 7,
-                    "seats": 0
+                    "seats": 0,
+                    "coal": ["Divers"]
                 },
                 {
                     "name": "Lutte ouvrière",
@@ -1508,7 +1519,8 @@
                     "pool": "Droite",
 					"family": "Droite",
                     "level": 10,
-                    "seats": 147
+                    "seats": 147,
+                    "coal": ["Centre-droit"]
                 },
                 {
                     "name": "Rassemblement pour la République",
@@ -1521,7 +1533,7 @@
                     "seats": 67
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 9.78,
                     "res": 2739925,
                     "party": "PCF",
@@ -1574,7 +1586,7 @@
                     "res_100": 1.21,
                     "res": 340109,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 6,
                     "seats": 0
@@ -1657,7 +1669,8 @@
                     "party": "RPR (+CNIP)",
                     "pool": "Droite",
 					"family": "Droite",
-                    "level": 8
+                    "level": 8,
+                    "coal": ["Centre-droit"]
                 },
                 {
                     "name": "Raymond Barre",
@@ -1691,7 +1704,7 @@
                     "res_100": 3.78,
                     "res": 1149642,
                     "party": "Verts",
-                    "pool": "Écologistes",
+                    "pool": "Centre",
 					"family": "Centre",
                     "level": 6
                 },
@@ -1702,7 +1715,8 @@
                     "party": "NGSEA (+PSU+LCR)",
                     "pool": "Gauche radicale/communiste",
 					"family": "Gauche",
-                    "level": 3
+                    "level": 3,
+                    "coal": ["Extrême-gauche"]
                 },
                 {
                     "name": "Arlette Laguiller",
@@ -1772,7 +1786,7 @@
                     "seats": 0
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 11.32,
                     "res": 2765761,
                     "party": "PCF",
@@ -1789,7 +1803,8 @@
                     "pool": "Gauche",
 					"family": "Gauche",
                     "level": 3,
-                    "seats": 263
+                    "seats": 263,
+                    "coal": ["Gauche radicale/communiste"]
                 },
                 {
                     "name": "Divers gauche",
@@ -1826,7 +1841,7 @@
                     "res_100": 0.35,
                     "res": 86312,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 5,
                     "seats": 0
@@ -1903,7 +1918,7 @@
                     "seats": 0
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 11.32,
                     "res": 2765761,
                     "party": "PCF",
@@ -1920,7 +1935,8 @@
                     "pool": "Gauche",
 					"family": "Gauche",
                     "level": 3,
-                    "seats": 263
+                    "seats": 263,
+                    "coal": ["Gauche radicale/communiste"]
                 },
                 {
                     "name": "Divers gauche",
@@ -1957,7 +1973,7 @@
                     "res_100": 0.35,
                     "res": 86312,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 5,
                     "seats": 0
@@ -2029,10 +2045,11 @@
                     "res_100": 28.88,
                     "res": 5242038 ,
                     "party": "UDF+RPR+CNIP",
-                    "pool": "Droite",
+                    "pool": "Centre-droit",
 					"family": "Droite",
                     "level": 13,
-                    "seats": 26
+                    "seats": 26,
+                    "coal": ["Droite"]
                 },
                 {
                     "name": "Parti socialiste",
@@ -2055,14 +2072,15 @@
                     "seats": 10
                 },
                 {
-                    "name": "Europe Écologie - Les Verts",
+                    "name": "Les Verts",
                     "res_100": 10.59,
                     "res": 1922945,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Centre",
 					"family": "Centre",
                     "level": 6,
-                    "seats": 9
+                    "seats": 9,
+                    "coal": ["Divers"]
                 },
                 {
                     "name": "Divers centre et divers droite",
@@ -2075,7 +2093,7 @@
                     "seats": 7
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 7.72,
                     "res": 1401171,
                     "party": "PCF",
@@ -2220,7 +2238,7 @@
                     "level": 13
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 9.25,
                     "res": 2342600,
                     "party": "PCF",
@@ -2242,16 +2260,17 @@
                     "res_100": 4.05,
                     "res": 1024551,
                     "party": "EELV",
-                    "pool": "Écologistes",
-					"family": "Centre",
-                    "level": 5
+                    "pool": "Gauche écologiste",
+					"family": "Gauche",
+                    "level": 5,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Génération écologie",
                     "res_100": 3.64,
                     "res": 920643,
                     "party": "GECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 7
                 },
@@ -2361,7 +2380,7 @@
                     "seats": 0
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 4.69,
                     "res": 954697,
                     "party": "PCF",
@@ -2385,17 +2404,18 @@
                     "res_100": 0.1,
                     "res": 20088,
                     "party": "EELV",
-                    "pool": "Écologistes",
-					"family": "Centre",
+                    "pool": "Divers",
+					"family": "Gauche",
                     "level": 5,
-                    "seats": 0
+                    "seats": 0,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Génération écologie",
                     "res_100": 0.09,
                     "res": 17403,
                     "party": "GECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 7,
                     "seeats": 0
@@ -2502,7 +2522,7 @@
                     "seats": 11
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 6.89,
                     "res": 1342222,
                     "party": "PCF",
@@ -2522,11 +2542,11 @@
                     "seats": 0
                 },
                 {
-                    "name": "Europe Écologie - Les Verts",
+                    "name": "Union des écologistes",
                     "res_100": 2.95,
                     "res": 574806,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 5,
                     "seats": 0
@@ -2555,8 +2575,8 @@
                     "res_100": 2.01,
                     "res": 392291,
                     "party": "GECO",
-                    "pool": "Écologistes",
-					"family": "Gauche",
+                    "pool": "Divers",
+					"family": "Centre",
                     "level": 8,
                     "seats": 0
                 },
@@ -2686,7 +2706,8 @@
                     "party": "RPR (+UDF)",
                     "pool": "Droite",
 					"family": "Droite",
-                    "level": 6
+                    "level": 6,
+                    "coal": ["Centre-droit"]
                 },
                 {
                     "name": "Jean-Marie Le Pen",
@@ -2728,7 +2749,7 @@
                     "res_100": 3.32,
                     "res": 1010681,
                     "party": "EELV",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 4
                 },
@@ -2820,7 +2841,7 @@
                     "level": 8
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 9.94,
                     "res": 2519281,
                     "party": "PCF",
@@ -2829,13 +2850,14 @@
                     "level": 2
                 },
                 {
-                    "name": "Europe Écologie - Les Verts / Divers écologistes",
+                    "name": "Les Verts / Divers écologistes",
                     "res_100": 6.81,
                     "res": 1726018,
-                    "party": "EELV (+ECO)",
-                    "pool": "Gauche radicale/communiste",
+                    "party": "LV (+ECO)",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
-                    "level": 4
+                    "level": 4,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Divers droite",
@@ -2944,7 +2966,7 @@
                     "seats": 112
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 3.83,
                     "res": 982990,
                     "party": "PCF",
@@ -2954,14 +2976,15 @@
                     "seats": 35
                 },
                 {
-                    "name": "Europe Écologie - Les Verts / Divers écologistes",
+                    "name": "Les Verts / Divers écologistes",
                     "res_100": 1.61,
                     "res": 414871,
-                    "party": "EELV (+ECO)",
-                    "pool": "Gauche radicale/communiste",
+                    "party": "LV (+ECO)",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 3,
-                    "seats": 7
+                    "seats": 7,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Divers droite",
@@ -3049,8 +3072,8 @@
                     "name": "Les Verts",
                     "res_100": 9.72,
                     "res": 1715729,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 5,
                     "seats": 9
@@ -3066,7 +3089,7 @@
                     "seats": 9
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 6.78,
                     "res": 1196491,
                     "party": "PCF",
@@ -3130,7 +3153,7 @@
                     "res_100": 1.52,
                     "res": 268038,
                     "party": "MEI",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 6,
                     "seats": 0
@@ -3285,8 +3308,8 @@
                     "name": "Noël Mamère",
                     "res_100": 5.25,
                     "res": 1495724,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 6
                 },
@@ -3349,7 +3372,7 @@
                     "res_100": 1.88,
                     "res": 535837,
                     "party": "Cap21",
-                    "pool": "Écologistes",
+                    "pool": "Centre",
 					"family": "Centre",
                     "level": 9
                 },
@@ -3477,7 +3500,7 @@
                     "level": 5
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 4.82,
                     "res": 1216178,
                     "party": "PCF",
@@ -3489,8 +3512,8 @@
                     "name": "Les Verts",
                     "res_100": 4.51,
                     "res": 1138222,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 7
                 },
@@ -3516,7 +3539,7 @@
                     "name": "Divers gauche",
                     "res_100": 1.09,
                     "res": 275553,
-                    "party": "PL (MDC)",
+                    "party": "DVG",
                     "pool": "Gauche",
 					"family": "Gauche",
                     "level": 6
@@ -3562,7 +3585,7 @@
                     "res_100": 1.17,
                     "res": 295899,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 10
                 },
@@ -3694,7 +3717,7 @@
                     "seats": 140
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 3.26,
                     "res": 690807,
                     "party": "PCF",
@@ -3707,8 +3730,8 @@
                     "name": "Les Verts",
                     "res_100": 3.19,
                     "res": 677933,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 3,
                     "seats": 3
@@ -3796,7 +3819,7 @@
                     "seats": 0
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 5.25,
                     "res": 900447,
                     "party": "PCF",
@@ -3826,11 +3849,11 @@
                     "seats": 1
                 },
                 {
-                    "name": "Europe Écologie - Les Verts",
+                    "name": "Les Verts",
                     "res_100": 7.41,
                     "res": 1271394,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 5,
                     "seats": 6
@@ -3840,7 +3863,7 @@
                     "res_100": 0.97,
                     "res": 166379,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 6,
                     "seats": 0
@@ -3953,7 +3976,8 @@
                     "party": "PS (+PRG+MRC)",
                     "pool": "Gauche",
 					"family": "Gauche",
-                    "level": 5
+                    "level": 5,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "François Bayrou",
@@ -4004,8 +4028,8 @@
                     "name": "Dominique Voynet",
                     "res_100": 1.57,
                     "res": 576666,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 7
                 },
@@ -4014,7 +4038,7 @@
                     "res_100": 1.32,
                     "res": 483008,
                     "party": "DVG",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 6
                 },
@@ -4097,7 +4121,7 @@
                     "level": 1
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 4.29,
                     "res": 1115719,
                     "party": "PCF",
@@ -4115,11 +4139,11 @@
                     "level": 3
                 },
                 {
-                    "name": "Europe Écologie - Les Verts",
+                    "name": "Les Verts",
                     "res_100": 3.25,
                     "res": 845884,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 4
                 },
@@ -4146,7 +4170,7 @@
                     "res_100": 0.8,
                     "res": 208465,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 7
                 },
@@ -4263,7 +4287,7 @@
                     "seats": 0
                 },
                 {
-                    "name": "Parti communiste",
+                    "name": "Parti communiste français",
                     "res_100": 2.28,
                     "res": 464739,
                     "party": "PCF",
@@ -4283,11 +4307,11 @@
                     "seats": 186
                 },
                 {
-                    "name": "Europe Écologie - Les Verts",
+                    "name": "Les Verts",
                     "res_100": 0.45,
                     "res": 90975,
-                    "party": "EELV",
-                    "pool": "Écologistes",
+                    "party": "LV",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 4,
                     "seats": 4
@@ -4317,7 +4341,7 @@
                     "res_100": 0,
                     "res": 0,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 7,
                     "seats": 0
@@ -4472,14 +4496,15 @@
                     "pool": "Gauche",
 					"family": "Gauche",
                     "level": 4,
-                    "seats": 14
+                    "seats": 14,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Europe Écologie - Les Verts",
                     "res_100": 16.28,
                     "res": 2803759,
                     "party": "EELV",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 5,
                     "seats": 14
@@ -4499,7 +4524,7 @@
                     "res_100": 3.63,
                     "res": 625375,
                     "party": "MEI+GE+ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 6,
                     "seats": 0
@@ -4522,7 +4547,8 @@
                     "pool": "Droite",
 					"family": "Droite",
                     "level": 9,
-                    "seats": 29
+                    "seats": 29,
+                    "coal": ["Centre-droit"]
                 },
                 {
                     "name": "Libertas",
@@ -4600,14 +4626,15 @@
                     "party": "PS (+PRG+MRC+Cap21+GE)",
                     "pool": "Gauche",
 					"family": "Gauche",
-                    "level": 5
+                    "level": 5,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Eva Joly",
                     "res_100": 2.31,
                     "res": 828345,
                     "party": "EELV",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 4
                 },
@@ -4636,7 +4663,8 @@
                     "party": "UMP (+PR+NC+CPNT+PCD)",
                     "pool": "Droite",
 					"family": "Droite",
-                    "level": 8
+                    "level": 8,
+                    "coal": ["Centre-droit"]
                 },
                 {
                     "name": "Nicolas Dupont-Aignan",
@@ -4675,7 +4703,8 @@
                     "party": "PS (+PRG+MRC+Cap21+GE)",
                     "pool": "Gauche",
 					"family": "Gauche",
-                    "level": 1
+                    "level": 1,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Nicolas Sarkozy",
@@ -4684,7 +4713,8 @@
                     "party": "UMP (+PR+NC+CPNT+PCD)",
                     "pool": "Droite",
 					"family": "Droite",
-                    "level": 2
+                    "level": 2,
+                    "coal": ["Droite souverainiste/radicale"]
                 }
             ],
             "abs": {
@@ -4739,7 +4769,7 @@
                     "res_100": 5.46,
                     "res": 1418264,
                     "party": "EELV",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 5
                 },
@@ -4766,7 +4796,7 @@
                     "res_100": 0.96,
                     "res": 249068,
                     "party": "ECO",
-                    "pool": "Écologistes",
+                    "pool": "Divers",
 					"family": "Centre",
                     "level": 8
                 },
@@ -4898,7 +4928,7 @@
                     "res_100": 3.6,
                     "res": 829036,
                     "party": "EELV",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 4,
                     "seats": 17
@@ -5043,14 +5073,15 @@
                     "pool": "Gauche",
 					"family": "Gauche",
                     "level": 3,
-                    "seats": 13
+                    "seats": 13,
+                    "coal": ["Centre-gauche"]
                 },
                 {
                     "name": "Europe Écologie - Les Verts",
                     "res_100": 8.95,
                     "res": 1696442,
                     "party": "EELV",
-                    "pool": "Écologistes",
+                    "pool": "Gauche écologiste",
 					"family": "Gauche",
                     "level": 4,
                     "seats": 6
@@ -5080,7 +5111,7 @@
                     "res_100": 9.94,
                     "res": 1884565,
                     "party": "MoDem+UDI",
-                    "pool": "Divers",
+                    "pool": "Centre",
 					"family": "Centre",
                     "level": 6,
                     "seats": 7
