@@ -1,6 +1,6 @@
 # Visualisation des tendances électorales en France
 
-Petit projet maison de dataviz (?) pour observer l'évolution de tendances électorales de la Cinquième République en France
+Petit projet maison de dataviz (?) pour observer l'évolution de tendances électorales de la Cinquième République en France. Ce projet a été majoritairement développé en avril 2023 et repris fin janvier 2025.
 
 ## Description
 
@@ -33,8 +33,8 @@ On dessine ensuite un "*stacked area chart*" en calculant les dimensions de chaq
 ## Améliorations prévues
 
 * Faire apparaître l'abstention
-* Faire apparaître les coalitions entre courants politiques (par exemple via des hachures)
-* Ajouter d'autres élections (notamment les municipales)
+* Faire mieux apparaître les coalitions entre courants politiques (par exemple via des hachures)
+* Ajouter d'autres élections (notamment les municipales, si tant est que ça ait du sens)
 
 ## Données
 
@@ -59,19 +59,19 @@ et consensuelle possible :
 * Le pool `Extrême droite` regroupe tous les partis les plus conservateurs, anti-immigration ou à ligne xénophobe ou fasciste, peu importe leur ligne économique (FN/RN, CTV, MNR...)
 * Le pool `Divers` regroupe tous les autres partis, à tendance non-clairement définie sur l'échiquier politique (ou dont ce n'est pas l'aspect principal) : régionalistes, fédéralistes, animalistes, ultramarins, "attrape-tout", sans étiquette...
 
-Ces "pools" sont classés dans des blocs (affichés si vous cochez la case idoine) comme suit : 
+Ces "pools" sont classés dans des blocs plus larges (affichés si vous cochez la case idoine) comme suit : 
 * Le bloc `Gauche` cumule les résultats des pools `Extrême gauche`, `Gauche radicale/communiste`, `Gauche`, `Écologistes`, et `Centre-gauche`.
 * Le bloc `Centre` cummule les résultats des pools `Divers` et `Centre`.
 * Le bloc `Droite` cummule les résultats des pools `Centre-droit`, `Droite`, `Droite radicale/souverainiste` et `Extrême droite`.
 
-Évidemment, ce n'est pas toujours (par exemple pour les partis écologistes et les coalitions, sans compter les partis dont la ligne évolue).
+Évidemment, ce n'est pas toujours parfait (par exemple pour les partis écologistes et les coalitions, sans compter les partis dont la ligne évolue).
 Je suis conscient qu'il peut exister des désaccords. Sachez toutefois que vous pouvez très simplement réaligner les pools et blocs vous-mêmes dans le code.
 
 ## Contact
 
 Si vous rencontrez un souci ou que vous voulez proposer une amélioration, utilisez les Issues.
 
-Pour toute autre demande, contactez-moi directement : Rémy Delanaux [@rdnetwork](https://cohost.org/rdnetwork)
+Pour toute autre demande, contactez-moi directement : Rémy Delanaux [@RdBetwork](https://bsky.app/profile/rdnetwork.bsky.social)
 
 
 ## License
