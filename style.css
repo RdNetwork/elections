@@ -24,8 +24,9 @@ h1 {
 section {
     margin-bottom: 1em;
 }
-.hoverText {
+.hoverText, .hoverPoint {
     font-weight: bold;
+    mix-blend-mode: screen;
 }
 .elecLine:hover {
     stroke-width: 5px;

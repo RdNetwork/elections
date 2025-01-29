@@ -3,12 +3,11 @@ window.onload=()=>{
     document.querySelector('#displayLines').addEventListener('change', () => {
         document.getElementById("displayTicks").disabled = !document.getElementById("displayLines").checked;
     })
-
     plotChart();
 }
 
 // Courants politiques
-const PARTY_POOLS = ["Extrême gauche", "Gauche radicale/communiste", "Gauche", "Écologistes", "Centre-gauche", "Divers", "Centre", "Centre-droit", "Droite", "Droite souverainiste/radicale", "Extrême droite"];
+const PARTY_POOLS = ["Extrême gauche", "Gauche radicale/communiste", "Gauche", "Gauche écologiste", "Centre-gauche", "Divers", "Centre", "Centre-droit", "Droite", "Droite souverainiste/radicale", "Extrême droite"];
 
 // Calendrier par type d'élection (rempli pendant l'exécution)
 const CALENDAR = {
@@ -60,12 +59,19 @@ function plotChart() {
                   existingObj.party += '/' + obj.party;
                   existingObj.res_100 += obj.res_100;
                   existingObj.res += obj.res;
+                  if (obj.coal) {
+                    existingObj.coal.res_coal += obj.res
+                    existingObj.coal.res_coal_100 += obj.res_100
+                    newCoalArray = existingObj.coal.pool.concat(obj.coal)
+                    existingObj.coal.pool = [...new Set(newCoalArray.flat())];
+                  }
                   existingObj.level.push(obj.level);
                   existingObj.family = obj.family
                 } else {
                   acc.push({
                     ...obj,
-                    level: [obj.level]
+                    level: [obj.level],
+                    coal: obj.coal ? {"res_coal": obj.res, "res_coal_100": obj.res_100, "pool": obj.coal}  : {"res_coal": 0, "res_coal_100": 0, "pool": []}
                   });
                 }
                 return acc;
@@ -137,7 +143,7 @@ function StackedAreaChart(data, {
     const X = d3.map(data, x);
     const Y = d3.map(data, y);
     const Z = d3.map(data, z);
-
+    const coals = d3.map(data, (res) => res.coal)
     // Compute default x- and z-domains, and unique the z-domain.
     if (xDomain === undefined) xDomain = d3.extent(X);
     if (zDomain === undefined) zDomain = Z;
@@ -166,12 +172,15 @@ function StackedAreaChart(data, {
         .offset(offset)
       (d3.rollup(I, ([i]) => i, i => X[i], i => Z[i]))
       .map(s => {
-        newS = s.map(d => Object.assign(d, {i: d.data[1].get(s.key)}))
+        newS = s.map(d => {
+            let id = d.data[1].get(s.key)
+            return Object.assign(d, {i: id, coal: coals[id]})
+        })
         newS.key = s.key
         newS.index = s.index
         return newS
         });
-
+    
     // Compute the default y-domain. Note: diverging stacks can be negative.
     if (yDomain === undefined) yDomain = d3.extent(series.flat(2));
   
@@ -180,7 +189,7 @@ function StackedAreaChart(data, {
     const yScale = yType(yDomain, yRange);
     const color = d3.scaleOrdinal(
         origz.reverse(), 
-        ["#bb0000", "#dd0000", "#FF8080", "#00c000", "#ffc0c0", "#FAC577", "#ffeb00", "#00FFFF", "#0066cc", "#adc1fd", "#404040"]
+        ["#bb0000", "#dd0000", "#FF8080", "#00c000", "#ffc0c0","#FAC577", "#ffeb00", "#00FFFF", "#0066cc", "#adc1fd", "#404040"]
     );
 
     const xAxis = d3.axisBottom(xScale).ticks(width / 80, xFormat).tickSizeOuter(0);
@@ -199,7 +208,7 @@ function StackedAreaChart(data, {
         } ) 
         .y0(([y1]) => yScale(y1))
         .y1(([, y2]) =>  yScale(y2))
-  
+
     const svg = d3.select("svg")
         .attr("width", width)
         .attr("height", height)
@@ -212,23 +221,26 @@ function StackedAreaChart(data, {
     })
     .map(function (time) { return new Date(time); });
 
-
-    let labelSeries = series.map((pool) => {
-        newPool = pool.map((elec) => {
-            let newElec = elec.map((d) => d)
-            newElec.data = {}
-            zDomain.forEach((z) => {
-                newElec.data[z] = Y[elec.data[1].get(z)]
-            })
-            newElec.i = elec.i
-            return newElec
+    // Définition des hachures coalitions
+    svg.append('defs')
+        .selectAll('pattern')
+        .data(PARTY_POOLS)
+        .enter()
+        .append('pattern')
+        .attr('id', function(_, i) {
+            return 'diagonalHatch'+i;
         })
-        newPool.key = pool.key
-        newPool.index = pool.index
-        return newPool
-    });
+        .attr('patternUnits', 'userSpaceOnUse')
+        .attr('pool', ((p) => p))
+        .attr('width', 10)
+        .attr('height', 10)
+        .append('path')
+        .attr('d', 'M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2')
+        .attr('stroke', ((p) => color(p)))
+        .attr('stroke-width', 4);
 
     // Zones colorées
+    const cbFam = document.querySelector('#family')
     svg.append("g")
         .selectAll("path")
         .data(series)
@@ -247,6 +259,32 @@ function StackedAreaChart(data, {
             .style("fill", ([{i}]) => d3.color(color(Z[i])))
             .style("stroke", "transparent")
             .style("stroke-width", 0);
+        })
+        .call((g) => {
+            g.each((pool, i, paths) => {
+                pool.forEach((elecWithCoal) => {
+                    if (!cbFam.checked && elecWithCoal.coal && elecWithCoal.coal.pool.length > 0) {
+                        let mainParty = pool.key
+                        let coalParty = elecWithCoal.coal.pool[0]       //TODO: coals with more than one pools
+                        let downCoal = PARTY_POOLS.indexOf(coalParty) > PARTY_POOLS.indexOf(mainParty)
+                        let whole = (elecWithCoal.coal.res_coal === Y[elecWithCoal.i])
+                        let xCoal = xScale(X[elecWithCoal.i]), y0Coal = yScale(elecWithCoal[0]), y1Coal = yScale(elecWithCoal[1])
+                        let yRadius = (y0Coal-y1Coal)/2,  yCenter = (y0Coal+y1Coal)/2, yRatio = elecWithCoal.coal.res_coal/Y[elecWithCoal.i];
+                        
+                        svg.append('ellipse')
+                            .attr('cx', xCoal)
+                            .attr('cy', downCoal ? (y0Coal-yRadius*yRatio/2) : (y1Coal+yRadius*yRatio/2))
+                            .attr('ry', (y0Coal-y1Coal)*yRatio/4)
+                            .attr('rx', 35)
+                            .attr('class', 'areaCoal')
+                            .attr("fill", "url(#diagonalHatch"+PARTY_POOLS.indexOf(coalParty)+")")
+                            .style("opacity", 0.6)
+                            .append("title")
+                            .text("Coalition " + mainParty + " - " + coalParty)
+                    }
+
+                })
+            })
         })
         .append("title")
         .text(([{i}]) => Z[i])
@@ -424,9 +462,8 @@ function StackedAreaChart(data, {
                     .attr('r', '7')
                     // .style("stroke", "black")
                     // .style("stroke-width", 1)
-                    .attr('fill', d3.color(color(Z[id])).brighter());
+                    .attr('fill', d3.color(color(Z[id])));
                 }
-
             })
 
             let formerSmall = false; revert = false;
@@ -454,7 +491,7 @@ function StackedAreaChart(data, {
                     .attr('dx', hoverTextX)
                     .attr('dy', '0')
                     .style('text-anchor', hoverTextAnchor)
-                    .style('fill',  "lightgrey")
+                    .attr('fill', d3.color(color(Z[id])))
                     .text(Z[id] + " : " + d3.format('.1%')(point[1]-point[0]));
                 }
             });
