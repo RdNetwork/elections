@@ -5130,6 +5130,857 @@
                 "abs_100": 57.57,
                 "abs": 796819
             }
+        },
+        {
+            "date": "2017-04-23",
+            "label": "Présidentiellles 2017 - 1er tour",
+            "type": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "Nathalie Arthaud",
+                    "res_100": 0.64,
+                    "res":  232384,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Philippe Poutou",
+                    "res_100": 1.09,
+                    "res":  394505,
+                    "party": "NPA",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Jean-Luc Mélenchon",
+                    "res_100": 19.58,
+                    "res":  7059951,
+                    "party": "PG (+PCF+POI)",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Benoit Hamon",
+                    "res_100": 6.36,
+                    "res":  2291288,
+                    "party": "PS (+EELV+PRG)",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 4,
+                    "coal": ["Gauche écologiste"]
+                },
+                {
+                    "name": "Jacques Cheminade",
+                    "res_100": 0.18,
+                    "res": 65586,
+                    "party": "S&P",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 5
+                },
+                {
+                    "name": "Emmanuel Macron",
+                    "res_100": 24.01,
+                    "res": 8656346,
+                    "party": "LREM (+MoDem+Cap21)",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 6
+                },
+                {
+                    "name": "Jean Lassalle",
+                    "res_100": 1.21,
+                    "res": 435301,
+                    "party": "RES",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 7
+                },
+                {
+                    "name": "François Fillon",
+                    "res_100": 20.01,
+                    "res": 7212995,
+                    "party": "LR (+UDI+PCD)",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 8,
+                    "coal": ["Centre-droit"]
+                },
+                {
+                    "name": "Nicolas Dupont-Aignan",
+                    "res_100": 4.7,
+                    "res": 1695000,
+                    "party": "DLR",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 9
+                },
+                {
+                    "name": "François Asselineau",
+                    "res_100": 0.92,
+                    "res": 332547,
+                    "party": "UPR",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 10
+                },
+                {
+                    "name": "Marine Le Pen",
+                    "res_100": 21.3,
+                    "res": 7678491,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 11
+                }
+            ],
+            "abs": {
+                "abs_100": 22.23,
+                "abs": 10578455 
+            }
+        },
+        {
+            "date": "2017-05-07",
+            "label": "Présidentiellles 2017 - 2e tour",
+            "type": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "Emmanuel Macron",
+                    "res_100": 66.1,
+                    "res":  20743128,
+                    "party": "LREM (+MoDem+Cap21)",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 1
+                },
+                {
+                    "name": "Marine Le Pen",
+                    "res_100": 33.9,
+                    "res":  10638475,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 25.44,
+                "abs": 12101366
+            }
+        },
+        {
+            "date": "2017-06-11",
+            "label": "Législatives 2017 - 1er tour",
+            "step": 1,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0.77,
+                    "res": 175214,
+                    "party": "LO+LCR+EXG",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "La France insoumise",
+                    "res_100": 11.03,
+                    "res": 2497622,
+                    "party": "LFI",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Parti communiste français",
+                    "res_100": 2.72,
+                    "res": 615487,
+                    "party": "PCF",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 7.44,
+                    "res": 1685677,
+                    "party": "PS",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.6,
+                    "res": 362281,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 4.3,
+                    "res": 973527,
+                    "party": "EELV+ECO",
+                    "pool": "Gauche écologiste",
+					"family": "Gauche",
+                    "level": 6
+                },
+                {
+                    "name": "Parti radical de gauche",
+                    "res_100": 0.47,
+                    "res": 106311,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 7
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.9,
+                    "res": 204049,
+                    "party": "REG",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 8
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 2.21,
+                    "res": 500309,
+                    "party": "DVC",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 9
+                },
+                {
+                    "name": "Mouvement démocrate",
+                    "res_100": 4.12,
+                    "res": 932227,
+                    "party": "MoDem",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 10
+                },
+                {
+                    "name": "La République en marche",
+                    "res_100": 28.21,
+                    "res": 6391269,
+                    "party": "LREM",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 11
+                },
+                {
+                    "name": "Union des démocrates indépendants",
+                    "res_100": 3.03,
+                    "res": 687225,
+                    "party": "UDI",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 12
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 2.76,
+                    "res": 625345,
+                    "party": "DVD",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 13
+                },
+                {
+                    "name": "Les Républicains",
+                    "res_100": 15.77,
+                    "res": 3573427,
+                    "party": "LR",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 14
+                },
+                {
+                    "name": "Debout la France",
+                    "res_100": 1.17,
+                    "res": 265420,
+                    "party": "DLR",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 15
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 13.2,
+                    "res": 2990454,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.3,
+                    "res": 68320,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 17
+                }
+            ],
+            "abs": {
+                "abs_100": 51.3,
+                "abs": 24403480 
+            }
+        },
+        {
+            "date": "2017-06-18",
+            "label": "Législatives 2017 - 2e tour",
+            "step": 2,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0,
+                    "res": 0,
+                    "party": "LO+LCR+EXG",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "La France Insoumise",
+                    "res_100": 4.86,
+                    "res": 883573,
+                    "party": "LFI",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 3,
+                    "seats": 17
+                },
+                {
+                    "name": "Parti communiste français",
+                    "res_100": 1.2,
+                    "res": 217833,
+                    "party": "PCF",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 2,
+                    "seats": 10
+                },
+                {
+                    "name": "Parti socialiste",
+                    "res_100": 5.68,
+                    "res": 1032842,
+                    "party": "PS",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 4,
+                    "seats": 30
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.45,
+                    "res": 263488,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 5,
+                    "seats": 12
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 0.13,
+                    "res": 23197,
+                    "party": "EELV+ECO",
+                    "pool": "Gauche écologiste",
+					"family": "Gauche",
+                    "level": 6,
+                    "seats": 1
+                },
+                {
+                    "name": "Parti radical de gauche",
+                    "res_100": 0.36,
+                    "res": 64860,
+                    "party": "PRG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 7,
+                    "seats": 3
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.76,
+                    "res": 137490,
+                    "party": "REG",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 8,
+                    "seats": 5
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 0.55,
+                    "res": 100574,
+                    "party": "DVC",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 9,
+                    "seats": 3
+                },
+                {
+                    "name": "Mouvement démocrate",
+                    "res_100": 6.06,
+                    "res": 1100656,
+                    "party": "MoDem",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 10,
+                    "seats": 42
+                },
+                {
+                    "name": "La République en marche",
+                    "res_100": 43.06,
+                    "res": 7826245,
+                    "party": "LREM",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 11,
+                    "seats": 308
+                },
+                {
+                    "name": "Union des démocrates indépendants",
+                    "res_100": 3.04,
+                    "res": 551784,
+                    "party": "UDI",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 12,
+                    "seats": 18
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 1.68,
+                    "res": 306074,
+                    "party": "DVD",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 13,
+                    "seats": 6
+                },
+                {
+                    "name": "Les Républicains",
+                    "res_100": 22.23,
+                    "res": 4040203,
+                    "party": "LR",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 14,
+                    "seats": 112
+                },
+                {
+                    "name": "Debout la France",
+                    "res_100": 0.1,
+                    "res": 17344,
+                    "party": "DLR",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 15,
+                    "seats": 1
+                },
+                {
+                    "name": "Front national",
+                    "res_100": 8.75,
+                    "res": 1590869,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16,
+                    "seats": 8
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.1,
+                    "res": 19034,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 17,
+                    "seats": 1
+                }
+            ],
+            "abs": {
+                "abs_100": 57.36,
+                "abs": 27128488
+            }
+        },
+        {
+            "date": "2019-05-25",
+            "label": "Européennes 2019 - Tour unique",
+            "step": 0,
+            "type": "euro",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0.8,
+                    "res": 180836,
+                    "party": "LO+EXG",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti communiste français",
+                    "res_100": 2.49,
+                    "res": 564949,
+                    "party": "PCF",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 2,
+                    "seats": 0
+                },
+                {
+                    "name": "La France insoumise",
+                    "res_100": 6.31,
+                    "res": 1428548,
+                    "party": "LFI (+GRS+MRC)",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 3,
+                    "seats": 6,
+                    "coal": ["Gauche"]
+                },
+                {
+                    "name": "Printemps européen",
+                    "res_100": 3.27,
+                    "res": 741772,
+                    "party": "GEN",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 4,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 0.21,
+                    "res": 45484,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 5,
+                    "seats": 0
+                },
+                {
+                    "name": "Europe Écologie",
+                    "res_100": 13.48,
+                    "res": 3055023,
+                    "party": "EELV",
+                    "pool": "Gauche écologiste",
+					"family": "Gauche",
+                    "level": 5,
+                    "seats": 12
+                },
+                {
+                    "name": "Europe écologique et sociale",
+                    "res_100": 6.19,
+                    "res": 1403170,
+                    "party": "PS (+ND+PRG)",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 7,
+                    "seats": 6,
+                    "coal": ["Centre-gauche"]
+                },
+                {
+                    "name": "Urgence écologie",
+                    "res_100": 1.82,
+                    "res": 412136,
+                    "party": "GECO+MEI+ECO",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 7,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 0.89,
+                    "res": 201316,
+                    "party": "DVC",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 8,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 0.89,
+                    "res": 201316,
+                    "party": "DVC",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 8,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti animaliste",
+                    "res_100": 2.16,
+                    "res": 490074,
+                    "party": "ANIM",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 9,
+                    "seats": 0
+                },
+                {
+                    "name": "Renaissance",
+                    "res_100": 22.42,
+                    "res": 5079015,
+                    "party": "LREM+MoDem+MR+AC+Agir",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 10,
+                    "seats": 21,
+                    "coal": ["Centre-droit"]
+                },
+                {
+                    "name": "Les Européens",
+                    "res_100": 2.5,
+                    "res": 566057,
+                    "party": "UDI",
+                    "pool": "Centre-droit",
+					"family": "Centre",
+                    "level": 11,
+                    "seats": 0
+                },
+                {
+                    "name": "Union de la Droite et du Centre",
+                    "res_100": 8.48,
+                    "res": 1920407,
+                    "party": "LR+NC+CPNT",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 12,
+                    "seats": 8,
+                    "coal": ["Centre-droit"]
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 0.29,
+                    "res": 65184,
+                    "party": "DVD",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 13,
+                    "seats": 0
+                },
+                {
+                    "name": "Debout la France",
+                    "res_100": 3.51,
+                    "res": 795508,
+                    "party": "DLR (+CNIP)",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 14,
+                    "seats": 0
+                },
+                {
+                    "name": "Ensemble pour le Frexit",
+                    "res_100": 1.17,
+                    "res": 265469,
+                    "party": "UPR",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 15,
+                    "seats": 0
+                },
+                {
+                    "name": "Rassemblement national",
+                    "res_100": 23.34,
+                    "res": 5286939,
+                    "party": "RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16,
+                    "seats": 22
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.68,
+                    "res": 153287,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 17,
+                    "seats": 0
+                }
+            ],
+            "abs": {
+                "abs_100": 49.88,
+                "abs": 23614588
+            }
+        },
+        {
+            "date": "2022-04-10",
+            "label": "Présidentiellles 2022 - 1er tour",
+            "type": "pres",
+            "step": 1,
+            "results": [
+                {
+                    "name": "Nathalie Arthaud",
+                    "res_100": 0.56,
+                    "res":  197094,
+                    "party": "LO",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Philippe Poutou",
+                    "res_100": 0.76,
+                    "res":  268904,
+                    "party": "NPA",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 2
+                },
+                {
+                    "name": "Jean-Luc Mélenchon",
+                    "res_100": 21.95,
+                    "res":  7712520,
+                    "party": "LFI (+POI+PG)",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Fabien Roussel",
+                    "res_100": 2.28,
+                    "res":  802422,
+                    "party": "PCF (+PRG+MRC)",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 4,
+                    "coal": ["Gauche"]
+                },
+                {
+                    "name": "Yannick Jadot",
+                    "res_100": 4.63,
+                    "res":  1627853,
+                    "party": "EELV (+Gen.s)",
+                    "pool": "Gauche écologiste",
+					"family": "Gauche",
+                    "level": 5
+                },
+                {
+                    "name": "Anne Hidalgo",
+                    "res_100": 1.74,
+                    "res":  616478,
+                    "party": "PS",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 6
+                },
+                {
+                    "name": "Jean Lassalle",
+                    "res_100": 3.13,
+                    "res": 1101387,
+                    "party": "RES",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 7
+                },
+                {
+                    "name": "Emmanuel Macron",
+                    "res_100": 27.85,
+                    "res": 9783058,
+                    "party": "LREM (+MoDem+Agir+PR+AC)",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 8,
+                    "coal": ["Centre"]
+                },
+                {
+                    "name": "Valérie Pecresse",
+                    "res_100": 4.78,
+                    "res": 1679001,
+                    "party": "LR (+UDI+LC)",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 9,
+                    "coal": ["Centre-droit"]
+                },
+                {
+                    "name": "Nicolas Dupont-Aignan",
+                    "res_100": 2.06,
+                    "res": 725176,
+                    "party": "DLR (+LP+UPR)",
+                    "pool": "Droite souverainiste/radicale",
+					"family": "Droite",
+                    "level": 10
+                },
+                {
+                    "name": "Marine Le Pen",
+                    "res_100": 23.15,
+                    "res": 8133828,
+                    "party": "RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 11
+                },
+                {
+                    "name": "Éric Zemmour",
+                    "res_100": 7.07,
+                    "res": 2485226,
+                    "party": "REC (+CNIP+Via)",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 12,
+                    "coal": ["Droite souverainiste/radicale"]
+                }
+            ],
+            "abs": {
+                "abs_100": 26.31,
+                "abs": 12824169 
+            }
+        },
+        {
+            "date": "2022-04-24",
+            "label": "Présidentiellles 2022 - 2e tour",
+            "type": "pres",
+            "step": 2,
+            "results": [
+                {
+                    "name": "Emmanuel Macron",
+                    "res_100": 58.55,
+                    "res":  18768639,
+                    "party": "LREM (+MoDem+Agir+PR+AC)",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 1,
+                    "coal": ["Centre"]
+                },
+                {
+                    "name": "Marine Le Pen",
+                    "res_100": 41.45,
+                    "res":  13288686,
+                    "party": "FN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 2
+                }
+            ],
+            "abs": {
+                "abs_100": 28.01,
+                "abs": 13655861
+            }
         }
     ]
- }
+}
