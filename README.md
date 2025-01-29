@@ -9,7 +9,7 @@ Il y a différentes variables d'ajustement et filtres disponibles :
 
 * Afficher les premiers ou seconds tours des élections compilées (les élections à tour unique sont incluses dans tous les cas). Par défaut, les premiers tours sont affichés. Il n'est pas possible d'afficher les deux tours en même temps, car je considère que les contextes sont très différents dans les deux cas.
 * Afficher les résultats en pourcentage des votes exprimés (c'est le résultat par défaut) ou en valeurs absolues du nombre de voix exprimées.
-* Filtrer selon le type d'élection
+* Filtrer selon le type d'élection.
 
 
 ## Comment utiliser ce code
@@ -18,8 +18,10 @@ Il y a différentes variables d'ajustement et filtres disponibles :
 
 * Les fichiers de ce dépôt
 * Un navigateur web récent et ne bloquant pas JavaScript
-* Un serveur Web : si vous essayez de générer le graphique en local, votre navigateur va vour hurler dessus à cause des requêtes CORS.
-Le plus simple est d'utiliser un petit serveur web (comme `http-server` sur Node.js).
+* Un serveur Web : si vous essayez de générer le graphique en local, votre navigateur va vraisemblablement vous hurler
+ dessus à cause des [requêtes CORS](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS).
+Le plus simple est d'utiliser un petit serveur web minimal (comme `http-server` sur Node.js ou `http-server` via Python).
+Je n'ai pour le moment pas prévu d'héberger ce projet sur un site dédié.
 
 ### Fonctionnement
 
@@ -27,7 +29,7 @@ Ce projet utilise la librairie [D3.js](https://d3js.org/) pour la gestion des do
 Il utilise également la librairie annexe [d3-area-label](https://github.com/curran/d3-area-label) pour annoter les zones directement sur le graphique.
 
 Les données compilées dans le fichier JSON sont interprétées par le code et regroupées ensemble par courant politique identique. 
-On dessine ensuite un "*stacked area chart*" en calculant les dimensions de chaque zone à chaque point de l'axe X (axe des dates), sa couleur dépendant du courant politique.
+On dessine ensuite un "*stacked area chart*" (graphique en aires empilées) en calculant les dimensions de chaque zone à chaque point de l'axe X (axe des dates), sa couleur dépendant du courant politique.
 
 
 ## Améliorations prévues
@@ -39,7 +41,7 @@ On dessine ensuite un "*stacked area chart*" en calculant les dimensions de chaq
 ## Données
 
 Les données des élections proviennent le plus possible des données du Ministère de l'Intérieur,
-parfois trouvées directement sur leur site, et sinon compilées par ailleurs. Par exemple :
+parfois trouvées directement sur leur site, et sinon compilées par ailleurs. Par exemple, j'ai parfois utilisé :
 * [Wikipédia](https://fr.wikipedia.org/wiki/Scrutins_en_France_sous_la_Cinqui%C3%A8me_R%C3%A9publique)
 * [Data.Gouv](https://www.data.gouv.fr/fr/posts/les-donnees-des-elections/)
 * [France-Politique](https://www.france-politique.fr/) et les travaux de Laurent de Boisseau
