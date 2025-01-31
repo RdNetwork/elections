@@ -447,7 +447,7 @@ function StackedAreaChart(data, {
         //   .attr('height', height)
         // ;
         svg.selectAll('.elecLine').on('mouseover', hoverTicks);
-        svg.selectAll('.elecLine').on('mouseout', () => {svg.selectAll(".hoverPoint").remove(); svg.selectAll(".hoverText").remove();})
+        svg.selectAll('.elecLine').on('mouseout', () => {svg.selectAll(".hoverPoint").remove(); svg.selectAll(".hoverText").remove(); svg.selectAll(".hoverTextBg").remove();})
 
         function hoverTicks(event) {
             event.preventDefault();
@@ -495,6 +495,11 @@ function StackedAreaChart(data, {
 
             let formerSmall = false; revert = false;
             
+            let hoverLayer = svg.select(".hoverLayer");
+            if (hoverLayer.empty()) {
+                hoverLayer = svg.append("g").attr("class", "hoverLayer");
+            }
+
             svg.selectAll('.hoverText').each((p,i,d) => {
                 let id = d3.select(d[i]).attr("id").slice(3)
                 let pool = series.find((p) => p.key === Z[id]);
@@ -513,17 +518,29 @@ function StackedAreaChart(data, {
                     const hoverTextX = (isLessThanHalf || revert) ? '-0.75em' : '0.75em';
                     const hoverTextAnchor = (isLessThanHalf || revert) ? 'end' : 'start';
 
-                    d3.select(d[i])
-                    .attr('x', xScale(mouseDateSnap))
-                    .attr('y', yScale((point[0]+point[1])/2))
-                    .attr('dx', hoverTextX)
-                    .attr('dy', '0')
-                    .style('text-anchor', hoverTextAnchor)
-                    .attr('fill', d3.color(color(Z[id])))
-                    .text(Z[id] + " : " + (cbQty.checked 
-                        ? numberFormat(point[1] - point[0])
-                        : percentExactFormat(point[1] - point[0]).replace("%", " %")
-                    ));
+                    let textSelection = hoverLayer.append("text")
+                        .attr("class", "hoverText")
+                        .attr('x', xScale(mouseDateSnap))
+                        .attr('y', yScale((point[0] + point[1]) / 2))
+                        .attr('dx', hoverTextX)
+                        .attr('dy', '0.35em')
+                        .style('text-anchor', hoverTextAnchor)
+                        .attr('fill', d3.color(color(Z[id])))
+                        .text(Z[id] + " : " + (cbQty.checked 
+                            ? numberFormat(point[1] - point[0])
+                            : percentExactFormat(point[1] - point[0]).replace("%", " %")
+                        ));
+
+                    let bbox = textSelection.node().getBBox();
+                    hoverLayer.insert("rect", ".hoverText")
+                        .attr("class", "hoverTextBg")
+                        .attr("x", bbox.x - 4)
+                        .attr("y", bbox.y - 2)
+                        .attr("width", bbox.width + 8)
+                        .attr("height", bbox.height + 4)
+                        .attr("fill", "rgba(0,0,0, 0.2)")
+                        .attr("rx", 4)
+                        .attr("ry", 4);
                 }
             });
 
