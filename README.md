@@ -31,12 +31,12 @@ Il utilise également la librairie annexe [d3-area-label](https://github.com/cur
 Les données compilées dans le fichier JSON sont interprétées par le code et regroupées ensemble par courant politique identique. 
 On dessine ensuite un "*stacked area chart*" (graphique en aires empilées) en calculant les dimensions de chaque zone à chaque point de l'axe X (axe des dates), sa couleur dépendant du courant politique.
 
-
 ## Améliorations prévues
 
 * Faire apparaître l'abstention
 * Faire mieux apparaître les coalitions entre courants politiques (par exemple via des hachures)
 * Ajouter d'autres élections (notamment les municipales, si tant est que ça ait du sens)
+* Vérifier les améliorations apportées par l'équipe de D3.js ces dernières années (vu que l'exemple dont je me suis inspiré a été mis à jour)
 
 ## Données
 
@@ -73,9 +73,11 @@ Je suis conscient qu'il peut exister des désaccords. Sachez toutefois que vous 
 
 Si vous rencontrez un souci ou que vous voulez proposer une amélioration, utilisez les Issues.
 
-Pour toute autre demande, contactez-moi directement : Rémy Delanaux [@RdBetwork](https://bsky.app/profile/rdnetwork.bsky.social)
+Pour toute autre demande, contactez-moi directement : Rémy Delanaux [@RdNetwork](https://bsky.app/profile/rdnetwork.bsky.social)
 
 
-## License
+## Licence
 
 Ce projet est sous licence MIT (voir le fichier LICENSE.md pour les détails, en anglais).
+Le code de génération du graphique en aires est [fourni par Observable sous licence ISC](https://observablehq.com/@d3/normalized-stacked-area-chart)
+à partir d'un exemple de code datant de 2021.
