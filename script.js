@@ -17,6 +17,17 @@ const CALENDAR = {
 }
 const TYPE_LABELS = {"legis": "Législatives", "pres" : "Présidentielles", "euro": "Européennes"}
 
+// Formatage français
+const FR_LOCALE = d3.formatLocale({
+    decimal: ",",
+    thousands: " ",
+    grouping: [3]
+})
+
+const numberFormat = FR_LOCALE.format(",");
+const percentTickFormat = FR_LOCALE.format(".0%");
+const percentExactFormat = FR_LOCALE.format(".2%");
+
 width = 1800;
 height = 700;
 
@@ -103,8 +114,10 @@ function plotChart() {
             zDomain:  PARTY_POOLS.reverse(),
             width: width,
             height: height,
+            cbQty: cbQty,
             offset: cbQty.checked ? d3.stackOffsetNone : d3.stackOffsetExpand,
-            yFormat: cbQty.checked ? null : "%"
+            // yFormat: cbQty.checked ? null : "%"
+            yFormatFn: cbQty.checked ? numberFormat : d => percentTickFormat(d).replace("%", " %")
         });
         // Ajout du graphique SVG à la page
         document.getElementById("chart").append(chart);
@@ -148,8 +161,9 @@ function StackedAreaChart(data, {
     order = d3.stackOrderNone, // stack order method
     yLabel, // a label for the y-axis
     xFormat, // a format specifier string for the x-axis
-    yFormat = "%", // a format specifier string for the y-axis
+    yFormatFn, // a format specifier string for the y-axis
     // colors = d3.schemeTableau10, // an array of colors for the (z) categories
+    cbQty, // checkbox absolu/pourcentage
   } = {}) {
     // Compute values.
     const X = d3.map(data, x);
@@ -205,8 +219,9 @@ function StackedAreaChart(data, {
     );
 
     const xAxis = d3.axisBottom(xScale).ticks(width / 80, xFormat).tickSizeOuter(0);
-    const yAxis = d3.axisLeft(yScale).ticks(height / 50, yFormat);
-  
+    // const yAxis = d3.axisLeft(yScale).ticks(height / 50, yFormat);
+    const yAxis = d3.axisLeft(yScale).ticks(height / 50).tickFormat(yFormatFn);
+
     const area = d3.area()
         .curve(d3.curveMonotoneX)
         .x((point) =>  {
@@ -479,6 +494,7 @@ function StackedAreaChart(data, {
             })
 
             let formerSmall = false; revert = false;
+            
             svg.selectAll('.hoverText').each((p,i,d) => {
                 let id = d3.select(d[i]).attr("id").slice(3)
                 let pool = series.find((p) => p.key === Z[id]);
@@ -504,7 +520,10 @@ function StackedAreaChart(data, {
                     .attr('dy', '0')
                     .style('text-anchor', hoverTextAnchor)
                     .attr('fill', d3.color(color(Z[id])))
-                    .text(Z[id] + " : " + d3.format('.1%')(point[1]-point[0]));
+                    .text(Z[id] + " : " + (cbQty.checked 
+                        ? numberFormat(point[1] - point[0])
+                        : percentExactFormat(point[1] - point[0]).replace("%", " %")
+                    ));
                 }
             });
 
