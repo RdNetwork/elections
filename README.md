@@ -52,22 +52,24 @@ et consensuelle possible :
 * Le pool `Extrême gauche` regroupe tous les partis explicitement trotskistes, communistes radicaux, et révolutionnaires (LO, LCR, NPA...)
 * Le pool `Gauche radicale/communiste` regroupe tous les partis communistes et trotskistes modérés et réformistes, de gauche antilibérale et progressiste (PCF post-1945, FG/LFI, PSU...)
 * Le pool `Gauche` regroupe tous les partis socialistes et socio-démocrates réformistes et aux tendances progressistes (PS...) 
-* Le pool `Écologistes` regroupe tous les partis centrés sur les enjeux écologiques, peu importe leur alignement (EELV, GE...)
-* Le pool `Centre-gauche` regroupe tous les partis socio-démocrates, les courants de gauche se réclamant non-marxistes et communistes, et les partis centristes se réclamant de la gauche et du centre (MRG/PRG...) 
+* Le pool `Gauche écologiste` regroupe tous les partis centrés sur les enjeux écologiques dans sa conceptoion majeure depuis les années 1990, à savoir une gauche sociale large (Europe-Ecologie Les Verts). Note : les formations écologistes plus anciennes ou les formations actuelles se réclamant d'une écologie apartisane ou non-classée à gauche sont regroupées au sein de la famille centriste, et non ici (Cap21, EàC, LV pré-1993, GE pré-2018...)
+* Le pool `Centre-gauche` regroupe tous les partis socio-démocrates, les courants de gauche se réclamant non-marxistes et communistes, et les partis centristes se réclamant de la gauche et du centre (MRG/PRG, Place Publique...) 
 * Le pool `Centre` regroupe tous les partis du centre historique, oscillants entre social-démocratie et libéralisme mais sans accent prononcé sur le capitalisme, le conservatisme ou le socialisme, ainsi que les partis de type "Troisième Voie" (UDF post-2000, MODEM, LREM-TDP...)
 * Le pool `Centre-droit` regroupe les partis centristes à tendance libérale/capitaliste assumée ou se réclamant du centre et de la droite (UDF pré-2000, LREM-HOR, CNIP pré-1980, UDI...)
 * Le pool `Droite` regroupe tous les partis gaullistes, libéraux-conservateurs et capitalistes, appartenant historiquement à la droite (RPR/UMP/LR...)
 * Le pool `Droite radicale/souverainiste` regroupe tous les partis de droite marqués par une idéologique plus spécifiquement conservatrice, religieuse ou souverainistes mais se réclamant de la droite, qu'elle soit "gaulliste-sociale" ou capitaliste (MPF/DLF, Via...)
 * Le pool `Extrême droite` regroupe tous les partis les plus conservateurs, anti-immigration ou à ligne xénophobe ou fasciste, peu importe leur ligne économique (FN/RN, CTV, MNR...)
-* Le pool `Divers` regroupe tous les autres partis, à tendance non-clairement définie sur l'échiquier politique (ou dont ce n'est pas l'aspect principal) : régionalistes, fédéralistes, animalistes, ultramarins, "attrape-tout", sans étiquette...
+* Le pool `Divers` regroupe tous les autres partis, à tendance non-clairement définie sur l'échiquier politique (ou dont ce n'est pas l'aspect principal) : régionalistes, fédéralistes, animalistes, ultramarins, "attrape-tout", écologistes hors gauche, sans étiquette... 
 
 Ces "pools" sont classés dans des blocs plus larges (affichés si vous cochez la case idoine) comme suit : 
-* Le bloc `Gauche` cumule les résultats des pools `Extrême gauche`, `Gauche radicale/communiste`, `Gauche`, `Écologistes`, et `Centre-gauche`.
+* Le bloc `Gauche` cumule les résultats des pools `Extrême gauche`, `Gauche radicale/communiste`, `Gauche`, `Gauche écologiste`, et `Centre-gauche`.
 * Le bloc `Centre` cummule les résultats des pools `Divers` et `Centre`.
 * Le bloc `Droite` cummule les résultats des pools `Centre-droit`, `Droite`, `Droite radicale/souverainiste` et `Extrême droite`.
 
 Évidemment, ce n'est pas toujours parfait (par exemple pour les partis écologistes et les coalitions, sans compter les partis dont la ligne évolue).
 Je suis conscient qu'il peut exister des désaccords. Sachez toutefois que vous pouvez très simplement réaligner les pools et blocs vous-mêmes dans le code.
+
+Dans les élections avec énormément de candidats/listes dont beaucoup de petites (typiquement : les élections européennes), j'ai fait le choix de grouper les petits candidats (moins de 1-2% des suffrages exprimés) directement dans leur pool le plus pertinent, en totalisant leurs voix (par exemple, des listes mineures d'extrême droite n'apparaissent pas individuellement dans les données JSON, maias dans un item unique de type `Divers extrême droite`).
 
 ## Contact
 
