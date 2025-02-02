@@ -5751,16 +5751,6 @@
                     "seats": 0
                 },
                 {
-                    "name": "Divers / Sans étiquette",
-                    "res_100": 0.89,
-                    "res": 201316,
-                    "party": "DVC",
-                    "pool": "Divers",
-					"family": "Centre",
-                    "level": 8,
-                    "seats": 0
-                },
-                {
                     "name": "Parti animaliste",
                     "res_100": 2.16,
                     "res": 490074,
@@ -5924,7 +5914,7 @@
                     "res_100": 3.13,
                     "res": 1101387,
                     "party": "RES",
-                    "pool": "Divers",
+                    "pool": "Centre-droit",
 					"family": "Centre",
                     "level": 7
                 },
@@ -6011,6 +6001,553 @@
             "abs": {
                 "abs_100": 28.01,
                 "abs": 13655861
+            }
+        },
+        {
+            "date": "2024-06-09",
+            "label": "Européennes 2024 - Tour unique",
+            "step": 0,
+            "type": "euro",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0.7,
+                    "res": 171885,
+                    "party": "LO+NPA+EXG",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "La France Insoumise - Union Populaire",
+                    "res_100": 9.89,
+                    "res": 2448703,
+                    "party": "LFI(+POI)",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 2,
+                    "seats": 9
+                },
+                {
+                    "name": "Gauche unie pour le monde du travail",
+                    "res_100": 2.36,
+                    "res": 584067,
+                    "party": "PCF(+GRS+MRC)",
+                    "pool": "Gauche radicale/communiste",
+					"family": "Gauche",
+                    "level": 3,
+                    "seats": 0
+                },
+                {
+                    "name": "Europe Écologie",
+                    "res_100": 5.5,
+                    "res": 1361883,
+                    "party": "LE",
+                    "pool": "Gauche écologiste",
+					"family": "Gauche",
+                    "level": 4,
+                    "seats": 5
+                },
+                {
+                    "name": "Réveiller l'Europe",
+                    "res_100": 13.83,
+                    "res": 3424216,
+                    "party": "PP+PS",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 5,
+                    "seats": 13,
+                    "coal": ["Gauche"]
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 0.51,
+                    "res": 127052,
+                    "party": "PRG+PPir+ND+UDMF+DVG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 6,
+                    "seats": 0
+                },
+                {
+                    "name": "Besoin d'Europe",
+                    "res_100": 14.6,
+                    "res": 3614646,
+                    "party": "REN+MoDem+HOR+UDI(+PR)",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 7,
+                    "seats": 13,
+                    "coal": ["Centre"]
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 1.99,
+                    "res": 494092,
+                    "party": "ECO(+DVC)",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 8,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 0.11,
+                    "res": 25962,
+                    "party": "DVC",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 9,
+                    "seats": 0
+                },
+                {
+                    "name": "Parti animaliste",
+                    "res_100": 2,
+                    "res": 495936,
+                    "party": "ANIM",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 10,
+                    "seats": 0
+                },
+                {
+                    "name": "Alliance rurale",
+                    "res_100": 2.35,
+                    "res": 582901,
+                    "party": "RES",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 11,
+                    "seats": 0
+                },
+                {
+                    "name": "Les Républicains",
+                    "res_100": 7.25,
+                    "res": 1794171,
+                    "party": "LR(+NC)",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 12,
+                    "seats": 6,
+                    "coal": ["Centre-droit"]
+                },
+                {
+                    "name": "Divers droite souverainiste",
+                    "res_100": 1.08,
+                    "res": 266922,
+                    "party": "UPR+RS",
+                    "pool": "Droite souverainiste",
+					"family": "Droite",
+                    "level": 13,
+                    "seats": 0
+                },
+                {
+                    "name": "Rassemblement national",
+                    "res_100": 31.37,
+                    "res": 7765936,
+                    "party": "RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 14,
+                    "seats": 30
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.98,
+                    "res": 242274,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 15,
+                    "seats": 0
+                },
+                {
+                    "name": "Reconquête",
+                    "res_100": 5.47,
+                    "res": 1353127,
+                    "party": "REC",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16,
+                    "seats": 5
+                }
+            ],
+            "abs": {
+                "abs_100": 48.51,
+                "abs": 23992509
+            }
+        },
+        {
+            "date": "2024-06-30",
+            "label": "Législatives 2024 - 1er tour",
+            "step": 1,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 1.14,
+                    "res": 366594,
+                    "party": "LO+LCR+EXG",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1
+                },
+                {
+                    "name": "Nouveau Front Populaire",
+                    "res_100": 28.06,
+                    "res": 8995228,
+                    "party": "LFI+PS+LE+PCF",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 2,
+                    "coal": ["Gauche radicale/communiste", "Gauche écologiste"]
+                },
+                {
+                    "name": "Gauche hors NFP",
+                    "res_100": 0.15,
+                    "res": 47259,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 3
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.57,
+                    "res": 503332,
+                    "party": "PRG+DVG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 4
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 0.57,
+                    "res": 182478,
+                    "party": "ECO",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 5
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 0.45,
+                    "res": 142871,
+                    "party": "Div",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 6
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 0.97,
+                    "res": 310727,
+                    "party": "REG",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 7
+                },
+                {
+                    "name": "Divers centre",
+                    "res_100": 1.22,
+                    "res": 391423,
+                    "party": "DVC",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 8
+                },
+                {
+                    "name": "Ensemble",
+                    "res_100": 20.04,
+                    "res": 6425707,
+                    "party": "REN+MoDem+HOR",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 9,
+                    "coal": ["Centre"]
+                },
+                {
+                    "name": "Union des démocrates indépendants",
+                    "res_100": 0.51,
+                    "res": 163072,
+                    "party": "UDI",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 10
+                },
+                {
+                    "name": "Horizons",
+                    "res_100": 0.72,
+                    "res": 231667,
+                    "party": "HOR",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 11
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 3.6,
+                    "res": 1154785,
+                    "party": "LC+DVD",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 12
+                },
+                {
+                    "name": "Les Républicains",
+                    "res_100": 6.57,
+                    "res": 106166,
+                    "party": "LR",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 13
+                },
+                {
+                    "name": "Droite souverainiste",
+                    "res_100": 0.28,
+                    "res": 90110,
+                    "party": "DLF+LP",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 14
+                },
+                {
+                    "name": "Union de l'extrême droite",
+                    "res_100": 3.96,
+                    "res": 1268822,
+                    "party": "RàD+RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 15,
+                    "coal": ["Droite"]
+                },
+                {
+                    "name": "Rasseblement national",
+                    "res_100": 29.26,
+                    "res": 9379092,
+                    "party": "RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16
+                },
+                {
+                    "name": "Reconquête",
+                    "res_100": 0.75,
+                    "res": 238934,
+                    "party": "RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 17
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.19,
+                    "res": 59679,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 18
+                }
+            ],
+            "abs": {
+                "abs_100": 33.29,
+                "abs": 16424052 
+            }
+        },
+        {
+            "date": "2024-07-06",
+            "label": "Législatives 2024 - 2e tour",
+            "step": 2,
+            "type": "legis",
+            "results": [
+                {
+                    "name": "Divers extrême gauche",
+                    "res_100": 0,
+                    "res": 0,
+                    "party": "LO+LCR+EXG",
+                    "pool": "Extrême gauche",
+					"family": "Gauche",
+                    "level": 1,
+                    "seats": 0
+                },
+                {
+                    "name": "Nouveau Front Populaire",
+                    "res_100": 25.68,
+                    "res": 7004724,
+                    "party": "LFI+PS+LE+PCF",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 2,
+                    "coal": ["Gauche radicale/communiste", "Gauche écologiste"],
+                    "seats": 178
+                },
+                {
+                    "name": "Gauche hors NFP",
+                    "res_100": 0.13,
+                    "res": 34704,
+                    "party": "DVG",
+                    "pool": "Gauche",
+					"family": "Gauche",
+                    "level": 3,
+                    "seats": 2
+                },
+                {
+                    "name": "Divers gauche",
+                    "res_100": 1.47,
+                    "res": 401063,
+                    "party": "PRG+DVG",
+                    "pool": "Centre-gauche",
+					"family": "Gauche",
+                    "level": 4,
+                    "seats": 12
+                },
+                {
+                    "name": "Divers écologistes",
+                    "res_100": 0.14,
+                    "res": 37808,
+                    "party": "ECO",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 5,
+                    "seats": 1
+                },
+                {
+                    "name": "Divers / Sans étiquette",
+                    "res_100": 0.14,
+                    "res": 38025,
+                    "party": "Div",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 6,
+                    "seats": 1
+                },
+                {
+                    "name": "Régionalistes",
+                    "res_100": 1.06,
+                    "res": 288202,
+                    "party": "REG",
+                    "pool": "Divers",
+					"family": "Centre",
+                    "level": 7,
+                    "seats": 9
+                },
+                {
+                    "name": "Divers centre",
+                    "res_100": 0.65,
+                    "res": 177167,
+                    "party": "DVC",
+                    "pool": "Centre",
+					"family": "Centre",
+                    "level": 8,
+                    "seats": 6
+                },
+                {
+                    "name": "Ensemble",
+                    "res_100": 23.15,
+                    "res": 6313808,
+                    "party": "REN+MoDem+HOR",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 9,
+                    "coal": ["Centre"],
+                    "seats": 150
+                },
+                {
+                    "name": "Union des démocrates indépendants",
+                    "res_100": 0.44,
+                    "res": 119672,
+                    "party": "UDI",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 10,
+                    "seats": 3
+                },
+                {
+                    "name": "Horizons",
+                    "res_100": 0.95,
+                    "res": 258139,
+                    "party": "HOR",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 11,
+                    "seats": 6
+                },
+                {
+                    "name": "Divers droite",
+                    "res_100": 3.6,
+                    "res": 980818,
+                    "party": "LC+DVD",
+                    "pool": "Centre-droit",
+					"family": "Droite",
+                    "level": 12,
+                    "seats": 27
+                },
+                {
+                    "name": "Les Républicains",
+                    "res_100": 5.41,
+                    "res": 1474650,
+                    "party": "LR",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 13,
+                    "seats": 39
+                },
+                {
+                    "name": "Droite souverainiste",
+                    "res_100": 0,
+                    "res": 18672,
+                    "party": "DLF+LP",
+                    "pool": "Droite",
+					"family": "Droite",
+                    "level": 14,
+                    "seats": 0
+                },
+                {
+                    "name": "Union de l'extrême droite",
+                    "res_100": 5,
+                    "res": 1364964,
+                    "party": "RàD+RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 15,
+                    "coal": ["Droite"],
+                    "seats": 5
+                },
+                {
+                    "name": "Rasseblement national",
+                    "res_100": 32.05,
+                    "res": 8744080,
+                    "party": "RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 16,
+                    "seats": 125
+                },
+                {
+                    "name": "Reconquête",
+                    "res_100": 0,
+                    "res": 0,
+                    "party": "RN",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 17,
+                    "seats": 0
+                },
+                {
+                    "name": "Divers extrême droite",
+                    "res_100": 0.09,
+                    "res": 23217,
+                    "party": "EXD",
+                    "pool": "Extrême droite",
+					"family": "Droite",
+                    "level": 18,
+                    "seats": 1
+                }
+            ],
+            "abs": {
+                "abs_100": 33.37,
+                "abs": 14460749
             }
         }
     ]
