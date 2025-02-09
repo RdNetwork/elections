@@ -30,7 +30,16 @@
                     <ul>
                         <li><input type="checkbox" id="filterPres" name="filterPres" value="pres" checked><label for="filterPres"> Élections présidentielles (rouge)</label></li>
                         <li><input type="checkbox" id="filterLegis" name="filterLegis" value="legis" checked><label for="fitlerLegis"> Élections législatives (bleu)</label></li>
-                        <li><input type="checkbox" id="filterEuro" name="filterEuro" value="euro" checked><label for="filterEuro"> Élections européennes (vert)</label></li>
+                        <li><input type="checkbox" id="filterEuro" name="filterEuro" value="euro"><label for="filterEuro"> Élections européennes (vert)</label></li>
+                        <li>
+                            <input type="checkbox" id="filterYear" name="filterYear" value="year"><label for="filterPres">
+                            <label for="filterYear">
+                                Afficher uniquement les élections ayant eu lieu entre le
+                                <input type="date" id="startDate" name="startDate" value="1965-01-01">
+                                et le
+                                <input type="date" id="endDate" name="endDate" value="2024-12-31">
+                            </label>
+                        </li>
                     </ul>
                 </div>
                 <div id="display">

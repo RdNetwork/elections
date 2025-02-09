@@ -1,5 +1,6 @@
 window.onload=()=>{    
     document.querySelectorAll('#headerPanel input[type=checkbox]').forEach((cbx) => cbx.addEventListener('change', plotChart));
+    document.querySelectorAll('input[type=date]').forEach((dateInput) => dateInput.addEventListener('change', plotChart));
     document.querySelector('#displayLines').addEventListener('change', () => {
         document.getElementById("displayTicks").disabled = !document.getElementById("displayLines").checked;
     })
@@ -16,6 +17,8 @@ const CALENDAR = {
     "euro": [],
 }
 const TYPE_LABELS = {"legis": "Législatives", "pres" : "Présidentielles", "euro": "Européennes"}
+const FIRST_DATE = new Date("1965-01-01")
+const LAST_DATE = new Date(); // Aujourd'hui
 
 // Formatage français
 const FR_LOCALE = d3.formatLocale({
@@ -36,14 +39,17 @@ function plotChart() {
     d3.json("data.json", {cache: "no-store"}).then(function(data) {
 
         // Switch 1er/2nd tour
-        const cb = document.querySelector('#step');
-        let stepFilter = cb.checked ? 2 : 1;
+        const cbTour = document.querySelector('#step');
+        let stepFilter = cbTour.checked ? 2 : 1;
         // Switch courants/blocs
         const cbFam = document.querySelector('#family');
         // Switch %/abs
         const cbQty = document.querySelector('#qty');
         // Filtres élections
         const cbTypes = [document.querySelector('#filterPres'), document.querySelector('#filterLegis'), document.querySelector('#filterEuro')];
+        const cbYears = document.querySelector('#filterYear');
+        const firstYearFilter = document.getElementById("startDate").value
+        const lastYearFilter = document.getElementById("endDate").value
 
         data.data.forEach((elec) => {
             // Remplissage du calendrier
@@ -91,11 +97,15 @@ function plotChart() {
         });
         
         
+        let startDate = cbYears.checked ? new Date(firstYearFilter) : FIRST_DATE
+        let endDate = cbYears.checked ? new Date(lastYearFilter) : LAST_DATE
+        console.log(startDate, endDate)
         let selectedTypes = []
         cbTypes.forEach((cbx) => {if (cbx.checked) selectedTypes.push(cbx.value) });
         allRes = data.data
             .filter((elec) => elec.step == stepFilter || elec.step == 0)    // Switch tour
             .filter((elec) => selectedTypes.includes(elec.type))
+            .filter((elec) => new Date(elec.date) >= startDate && new Date(elec.date) <= endDate)
             .map(elec => {
                 // On insére la date de l'élection dans chaque résultat (car les résultats sont "aplatis")
                 elec.mergedResults.forEach(res => {
