@@ -457,7 +457,14 @@ function StackedAreaChart(data, {
         //   .attr('height', height)
         // ;
         svg.selectAll('.elecLine').on('mouseover', hoverTicks);
-        svg.selectAll('.elecLine').on('mouseout', () => {svg.selectAll(".hoverPoint").remove(); svg.selectAll(".hoverText").remove(); svg.selectAll(".hoverTextBg").remove();})
+        // svg.selectAll('.elecLine').on('mouseout', () => {svg.selectAll(".hoverPoint").remove(); svg.selectAll(".hoverText").remove(); svg.selectAll(".hoverTextBg").remove();})
+        svg.selectAll('.elecLine').on('mouseout', () => {
+            svg.selectAll(".hoverPoint, .hoverText, .hoverTextBg")
+                .transition()
+                .duration(300)
+                .style("opacity", 0)
+                .on("end", function() { d3.select(this).remove(); });
+        });
 
         function hoverTicks(event) {
             event.preventDefault();
@@ -499,7 +506,11 @@ function StackedAreaChart(data, {
                     .attr('r', '7')
                     // .style("stroke", "black")
                     // .style("stroke-width", 1)
-                    .attr('fill', d3.color(color(Z[id])));
+                    .attr('fill', d3.color(color(Z[id])))
+                    .style("opacity", 0)  // Start invisible
+                    .transition()
+                    .duration(300)  // Fade-in duration (300ms)
+                    .style("opacity", 1);
                 }
             })
 
@@ -539,7 +550,11 @@ function StackedAreaChart(data, {
                         .text(Z[id] + " : " + (cbQty.checked 
                             ? numberFormat(point[1] - point[0])
                             : percentExactFormat(point[1] - point[0]).replace("%", " %")
-                        ));
+                        ))
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(300)
+                        .style("opacity", 1);
 
                     let bbox = textSelection.node().getBBox();
                     hoverLayer.insert("rect", ".hoverText")
@@ -550,7 +565,11 @@ function StackedAreaChart(data, {
                         .attr("height", bbox.height + 4)
                         .attr("fill", "rgba(0,0,0, 0.2)")
                         .attr("rx", 4)
-                        .attr("ry", 4);
+                        .attr("ry", 4)
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(300)
+                        .style("opacity", 1);
                 }
             });
 
